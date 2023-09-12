@@ -17,6 +17,7 @@ import { VerBitacoraComponent } from './Components/ComponentesProfesor/ver-bitac
 import { SolicitanteInicialComponent } from './Components/ComponentesProfesor/solicitante-inicial/solicitante-inicial.component';
 import { SolicitanteIntermedioComponent } from './Components/ComponentesProfesor/solicitante-intermedio/solicitante-intermedio.component';
 import { SolicitanteFinalComponent } from './Components/ComponentesProfesor/solicitante-final/solicitante-final.component';
+import { PerfilComponent } from './Components/perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { SolicitanteFinalComponent } from './Components/ComponentesProfesor/soli
     VerBitacoraComponent,
     SolicitanteInicialComponent,
     SolicitanteIntermedioComponent,
-    SolicitanteFinalComponent
+    SolicitanteFinalComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,
