@@ -17,6 +17,18 @@ import { VerBitacoraComponent } from './Components/ComponentesProfesor/ver-bitac
 import { SolicitanteInicialComponent } from './Components/ComponentesProfesor/solicitante-inicial/solicitante-inicial.component';
 import { SolicitanteIntermedioComponent } from './Components/ComponentesProfesor/solicitante-intermedio/solicitante-intermedio.component';
 import { SolicitanteFinalComponent } from './Components/ComponentesProfesor/solicitante-final/solicitante-final.component';
+import { PerfilComponenteComponent } from './Components/perfil-componente/perfil-componente.component';
+import { HomeComponent } from './Components/home/home.component';
+import { HomeEstudianteComponent } from './Components/ComponentesEstudiante/home-estudiante/home-estudiante.component';
+import { InscribirPComponent } from './Components/ComponentesEstudiante/inscribir-p/inscribir-p.component';
+import { PracticaInternaComponent } from './Components/ComponentesEstudiante/practica-interna/practica-interna.component';
+import { PracticaExternaComponent } from './Components/ComponentesEstudiante/practica-externa/practica-externa.component';
+import { MiPracticaComponent } from './Components/ComponentesEstudiante/mi-practica/mi-practica.component';
+import { IngresarBitacoraComponent } from './Components/ComponentesEstudiante/ingresar-bitacora/ingresar-bitacora.component';
+import { EstadoPComponent } from './Components/ComponentesEstudiante/estado-p/estado-p.component';
+import { EstadoIComponent } from './Components/ComponentesEstudiante/estado-i/estado-i.component';
+import { EstadoInComponent } from './Components/ComponentesEstudiante/estado-in/estado-in.component';
+import { EstadoFComponent } from './Components/ComponentesEstudiante/estado-f/estado-f.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +46,19 @@ import { SolicitanteFinalComponent } from './Components/ComponentesProfesor/soli
     VerBitacoraComponent,
     SolicitanteInicialComponent,
     SolicitanteIntermedioComponent,
-    SolicitanteFinalComponent
+    SolicitanteFinalComponent,
+    PerfilComponenteComponent,
+    HomeComponent,
+    HomeEstudianteComponent,
+    InscribirPComponent,
+    PracticaInternaComponent,
+    PracticaExternaComponent,
+    MiPracticaComponent,
+    IngresarBitacoraComponent,
+    EstadoPComponent,
+    EstadoIComponent,
+    EstadoInComponent,
+    EstadoFComponent
   ],
   imports: [
     BrowserModule,

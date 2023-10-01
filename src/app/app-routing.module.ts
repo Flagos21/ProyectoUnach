@@ -15,12 +15,23 @@ import { ProgresoIntermedioComponent } from './Components/ComponentesProfesor/pr
 import { ProgresoFinalComponent } from './Components/ComponentesProfesor/progreso-final/progreso-final.component';
 import { VerBitacoraComponent } from './Components/ComponentesProfesor/ver-bitacora/ver-bitacora.component';
 import { GestionarPracticasComponent } from './Components/ComponentesProfesor/gestionar-practicas/gestionar-practicas.component';
+import { HomeComponent } from './Components/home/home.component';
+import { HomeEstudianteComponent } from './Components/ComponentesEstudiante/home-estudiante/home-estudiante.component';
+import { InscribirPComponent } from './Components/ComponentesEstudiante/inscribir-p/inscribir-p.component';
+import { PracticaInternaComponent } from './Components/ComponentesEstudiante/practica-interna/practica-interna.component';
+import { PracticaExternaComponent } from './Components/ComponentesEstudiante/practica-externa/practica-externa.component';
+import { EstadoPComponent } from './Components/ComponentesEstudiante/estado-p/estado-p.component';
+import { EstadoIComponent } from './Components/ComponentesEstudiante/estado-i/estado-i.component';
+import { EstadoInComponent } from './Components/ComponentesEstudiante/estado-in/estado-in.component';
+import { EstadoFComponent } from './Components/ComponentesEstudiante/estado-f/estado-f.component';
+import { MiPracticaComponent } from './Components/ComponentesEstudiante/mi-practica/mi-practica.component';
+import { IngresarBitacoraComponent } from './Components/ComponentesEstudiante/ingresar-bitacora/ingresar-bitacora.component';
 
 // Rutas de navegacion
 const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
-
+  {path: 'home', component: HomeComponent},
 
 // Rutas de navegacion 'ComponentesProfesor'
   {path: 'home-profesor', component: HomeProfesorComponent},
@@ -35,6 +46,19 @@ const routes: Routes = [
   {path: 'progreso-intermedio', component: ProgresoIntermedioComponent},
   {path: 'progreso-final', component: ProgresoFinalComponent},
   {path: 'ver-bitacora', component: VerBitacoraComponent},
+
+//Rutas de navegacion 'ComponentesEstudiantes'  
+  {path: 'home-estudiante', component:HomeEstudianteComponent},
+  {path: 'inscribir-p', component: InscribirPComponent},
+  {path: 'practica-interna', component: PracticaInternaComponent},
+  {path: 'practica-externa', component: PracticaExternaComponent},
+  {path: 'estado-p', component: EstadoPComponent},
+  {path: 'estado-i', component: EstadoIComponent},
+  {path: 'estado-in', component: EstadoInComponent},
+  {path: 'estado-f', component: EstadoFComponent},
+  {path: 'mi-practica', component: MiPracticaComponent},
+  {path: 'ingresar-bitacora', component: IngresarBitacoraComponent},
+  {path: 'ver-bitacora', component:VerBitacoraComponent},  
 
 // Rutas 404
   {path: '404', component: PagenotfoundComponent},
