@@ -1,0 +1,36 @@
+h1 {
+    background-color: aqua;
+    color: rgb(20, 2, 2);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50px;
+    border: 2px solid black;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+}
+.boton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.tamaño{
+    width: 50px;
+     height: 50px; 
+     border: 1px solid #000;
+}
+button{
+    display: inline-block;
+      padding: 10px 20px;
+      background-color: #6200ea; /* Morado */
+      color: #fff; /* Texto en blanco */
+      border: none;
+      border-radius: 30px; /* Radio para hacerlo semi circular */
+      cursor: pointer;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+}
