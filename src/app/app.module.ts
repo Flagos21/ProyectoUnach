@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+import { AngularFireModule} from '@angular/fire/compat'
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './Components/login/login.component';
@@ -29,6 +32,7 @@ import { EstadoPComponent } from './Components/ComponentesEstudiante/estado-p/es
 import { EstadoIComponent } from './Components/ComponentesEstudiante/estado-i/estado-i.component';
 import { EstadoInComponent } from './Components/ComponentesEstudiante/estado-in/estado-in.component';
 import { EstadoFComponent } from './Components/ComponentesEstudiante/estado-f/estado-f.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -58,11 +62,21 @@ import { EstadoFComponent } from './Components/ComponentesEstudiante/estado-f/es
     EstadoPComponent,
     EstadoIComponent,
     EstadoInComponent,
-    EstadoFComponent
+    EstadoFComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp({ 
+      apiKey: "AIzaSyDJLl63eIqm3UZbAgnQwDQa6m_lt6RhfMs",
+      authDomain: "proyecto-unach.firebaseapp.com",
+      projectId: "proyecto-unach",
+      storageBucket: "proyecto-unach.appspot.com",
+      messagingSenderId: "341018038115",
+      appId: "1:341018038115:web:9879e451758c5224ff4d56",
+      measurementId: "G-VQ9B7YG3Y9"
+    }),
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
