@@ -14,7 +14,7 @@ export class UsuariosComponent {
   
   
     navegar() {
-    this.router.navigate(['/carga-academica']);
+    this.router.navigate(['/busqueda']);
     }
   }
 
