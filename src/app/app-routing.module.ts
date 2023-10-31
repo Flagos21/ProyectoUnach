@@ -7,7 +7,7 @@ import { BusquedaComponent } from './Components/busqueda/busqueda.component';
 //Rutas de navegacion
 const routes: Routes = [
   {path: '', redirectTo: 'carga-academica', pathMatch: 'full'},
-  { path: 'carga-academica', component: CargaAcademicaComponent },
+  {path: 'carga-academica', component: CargaAcademicaComponent },
   {path: 'usuarios', component: UsuariosComponent},
   {path: 'busqueda', component: BusquedaComponent},
 
