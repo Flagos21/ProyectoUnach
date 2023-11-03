@@ -3,10 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PortadaComponent } from './Components/portada/portada.component';
+import { CrearDocenteComponent } from './Components/crear-docente/crear-docente.component';
+import { CrearAsignaturaComponent } from './crear-asignatura/crear-asignatura.component';
+import { AsignarAsignaturaComponent } from './asignar-asignatura/asignar-asignatura.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PortadaComponent,
+    CrearDocenteComponent,
+    CrearAsignaturaComponent,
+    AsignarAsignaturaComponent
   ],
   imports: [
     BrowserModule,

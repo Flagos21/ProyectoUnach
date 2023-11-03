@@ -1,0 +1,100 @@
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    position: sticky; /* Fija la barra de búsqueda en su posición */
+    top: 0; /* La fija en la parte superior de la ventana */
+}
+
+.search-input {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 1000px;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #0056b3;
+}
+
+.left-image, .right-image {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+.left-image {
+    background-image: url('src/app/media/usuario.png'); 
+    width: 60px; /* Aumenta el ancho de la imagen */
+    height: 60px; /* Aumenta la altura de la imagen */
+}
+
+.right-image:nth-child(1) {
+    background-image: url('src/app/media/notificacion.png'); /* Ruta de la primera imagen */
+    margin-right: 40px; /* Ajusta el margen derecho de la primera imagen */
+}
+
+.right-image:nth-child(2) {
+    background-image: url('src/app/media/mensaje.png'); /* Ruta de la segunda imagen */
+    margin-right: 0px; /* Ajusta el margen derecho de la segunda imagen */
+}
+
+.right-images {
+    display: flex;
+    align-items: center;
+}
+
+.close-button {
+    background-color: #DA4747; /* Cambia el color del botón de cerrar a rojo */
+    border: none;
+    border-radius: 10%;
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Estilos para los campos de información */
+.info-container {
+    margin: 30px 150px auto; /* Ajusta el margen izquierdo a 20px */
+    width: 1000px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+}
+
+
+.info-name, .info-rut, .info-contrato, .info-email {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.info-input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilos personalizables para cada campo de información */
+.info-name {
+    /* Tus estilos personalizables para el campo "Nombre" */
+}
+
+.info-rut {
+    /* Tus estilos personalizables para el campo "Rut" */
+}
+
+.info-contrato {
+    /* Tus estilos personalizables para el campo "Tipo de Contrato" */
+}
+
+.info-email {
+    /* Tus estilos personalizables para el campo "Email" */
+}
+
