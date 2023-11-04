@@ -59,42 +59,53 @@
 
 /* Estilos para los campos de información */
 .info-container {
-    margin: 30px 150px auto; /* Ajusta el margen izquierdo a 20px */
-    width: 1000px;
+    margin: 10px 300px auto; /* Margen izquierdo de 20px, otros márgenes sin cambios */
+    width: 600px; /* Ancho de 800px */
+    height: 400px; /* Alto de 500px */
     background-color: #f2f2f2;
-    padding: 20px;
-    border: 3px solid #ccc;
-    border-radius: 10px;
+    padding: 30px 40px; /* Relleno superior de 30px y relleno derecho e izquierdo de 40px */
+    border: 2px solid #ccc; /* Borde de 2px sólido */
+    border-radius: 15px; /* Radio del borde de 15px */
 }
 
 
-.info-name, .info-rut, .info-contrato, .info-email {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.info-input {
-    width: 100%;
+/* Estilos para el campo Nombre */
+.nombre-input {
+    width: 450px;
     padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Añade margen inferior para reducir el espacio vertical */
+    margin-left: 57px;
+    
 }
 
-/* Estilos personalizables para cada campo de información */
-.info-name {
-    /* Tus estilos personalizables para el campo "Nombre" */
+/* Estilos para los campos de Rut */
+.rut-input-1 {
+    width: 200px; /* Ancho personalizado para cada parte del Rut */
+    padding: 5px; /* Altura personalizada */
+    margin-bottom: 0px;
+    margin-left: 87px;
 }
 
-.info-rut {
-    /* Tus estilos personalizables para el campo "Rut" */
+.rut-input-2 {
+    width: 10px; /* Ancho personalizado para cada parte del Rut */
+    padding: 5px; /* Altura personalizada */
+    margin-left: 4.5px;
 }
 
-.info-contrato {
-    /* Tus estilos personalizables para el campo "Tipo de Contrato" */
+/* Agrega margen al contenedor del menú desplegable */
+.contrato-item {
+    margin: 10px 0; /* Ajusta el valor del margen según tus necesidades */
 }
 
-.info-email {
-    /* Tus estilos personalizables para el campo "Email" */
+/* Estilos para el menú desplegable */
+.contrato-input {
+    width: 250px;
+    padding: 5px;
+    /* Otros estilos para el menú desplegable */
 }
 
+.email-input {
+    width: 237px; /* Ancho personalizado */
+    padding: 5px; /* Altura personalizada */
+    margin-left: 70px;
+}

@@ -18,22 +18,30 @@
     </div>
 
     <div class="info-container">
-        <div class="info-item">
+        <div class="nombre-item">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" class="info-input" placeholder="Escribe tu nombre">
+            <input type="text" id="nombre" class="nombre-input" placeholder="">
         </div>
-        <div class="info-item">
-            <label for="rut1">Rut:</label>
-            <input type="text" id="rut1" class="info-input rut-input" placeholder="Rut (parte 1)">
-            <input type="text" id="rut2" class="info-input rut-input" placeholder="Rut (parte 2)">
-            <div class="info-contrato">Tipo de Contrato:</div>
-            <input type="text" class="info-input" placeholder="Escribir tipo de contrato">
-    
-            <div class="info-email">Email:</div>
-            <input type="text" class="info-input" placeholder="Escribir email">
+        <div class="rut-item">
+            <label for="rut">Rut:</label>
+            <input type="text" id="rut1" class="rut-input-1" placeholder="">
+            <span> -</span>
+            <input type="text" id="rut2" class="rut-input-2" placeholder="">
         </div>
+        
+        <div class="contrato-item">
+            <label for="tipo-contrato">Tipo de Contrato:</label>
+            <select id="tipo-contrato" class="contrato-input">
+                <option value="contrato">Contrato</option>
+                <option value="horario">Horario</option>
+            </select>
         </div>
+        
+        
+        <div class="email-item">
+            <label for="email">Email:</label>
+            <input type="text" id="email" class="email-input" placeholder="">
+        </div>
+    </div>
 </body>
 </html>
-
-
