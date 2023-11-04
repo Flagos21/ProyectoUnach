@@ -115,13 +115,23 @@
     margin-top: 20px; /* Agrega margen superior para separarlos del contenido anterior */
 }
 
+/* Estilos para los botones */
 .boton {
-    background-color: #D9D9D9;
-    color: #000000;
-    padding: 30px 47.5px;
+    background-color: #D9D9D9; /* Color de fondo original */
+    color: #000000; /* Color del texto original */
+    padding: 30px 47.5px; /* Tamaño del botón */
     border: none;
     border-radius: 5px;
     margin: 5px; /* Espacio entre los botones */
     cursor: pointer;
-    margin-top: 100px;
+    margin-top: 100px; /* Espacio entre la parte superior y los botones */
+    transition: background-color 0.3s, color 0.3s; /* Agrega una transición suave para el cambio de color de fondo y del texto */
 }
+
+/* Estilos para los botones cuando el mouse está sobre ellos */
+.boton:hover {
+    background-color: #003366; /* Nuevo color de fondo al pasar el mouse por encima */
+    color: #ffffff; /* Nuevo color del texto al pasar el mouse por encima */
+}
+
+
