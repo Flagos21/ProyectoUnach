@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Firestore, collection, addDoc} from '@angular/fire/firestore';
 import Place from '../interfaces/place.interface';
+import Bitacora from '../interfaces/place.interface';
+
+
 
 @Injectable({
   providedIn: 'root'
@@ -13,5 +16,11 @@ export class PlacesService {
     const placeRef = collection(this.firestore, 'places');
     return addDoc(placeRef, place);
   }
+  addBitacora(bitacora: Bitacora) {
+    const bitacoraRef = collection(this.firestore, 'bitacora');
+    return addDoc(bitacoraRef, bitacora);
+  }
 
 }
+
+

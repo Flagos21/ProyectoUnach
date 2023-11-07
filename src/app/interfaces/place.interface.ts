@@ -7,3 +7,9 @@ export default interface Place {
     tipo: string;
     estado: string;
 }
+export default interface Bitacora {
+    id?: string;
+    descripcion: string;
+    fecha: Date;
+    horas: number;
+}
