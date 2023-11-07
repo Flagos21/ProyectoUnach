@@ -5,8 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PortadaComponent } from './Components/portada/portada.component';
 import { CrearDocenteComponent } from './Components/crear-docente/crear-docente.component';
-import { CrearAsignaturaComponent } from './crear-asignatura/crear-asignatura.component';
-import { AsignarAsignaturaComponent } from './asignar-asignatura/asignar-asignatura.component';
+import { CrearAsignaturaComponent } from './Components/crear-asignatura/crear-asignatura.component';
+import { AsignarAsignaturaComponent } from './Components/asignar-asignatura/asignar-asignatura.component';
 
 @NgModule({
   declarations: [

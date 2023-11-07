@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-crear-asignatura',
+  selector: 'crear-asignatura',
   templateUrl: './crear-asignatura.component.html',
   styleUrls: ['./crear-asignatura.component.css']
 })
