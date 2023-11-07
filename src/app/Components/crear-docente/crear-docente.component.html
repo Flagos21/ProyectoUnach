@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,user-scalable=none, initial-scale=1.0">
     <title>Buscador con Imágenes</title>
     <link rel="stylesheet" type="text/css" href="crear-docente.component.css">
 </head>
 <body>
-    <div class="search-container">
-        <div class="left-image"></div>
-        <input type="text" class="search-input" placeholder="Buscar...">
-        <div class="right-images">
+    <div class="">
+        <div class="info-container">
+            <div class="left-image"></div>
+         <input type="text" class="search-input , container" placeholder="Buscar...">
+         <div class="right-images">
             <div class="right-image notificacion"></div>
             <div class="right-image mensaje"></div>
         </div>
         <button class="close-button" (click)="redirigirPortada()">Cerrar</button>
-    </div>
+        </div>
 
-    <div class="info-container">
+    <div class="containerflex" >
         <div class="nombre-item">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" class="nombre-input" placeholder="">
@@ -48,5 +49,6 @@
             <button class="boton">Crear docente</button>
         </div>
     </div>
+</div>
 </body>
 </html>

@@ -60,8 +60,8 @@
 /* Estilos para los campos de información */
 .info-container {
     margin: 10px 300px auto; /* Margen izquierdo de 20px, otros márgenes sin cambios */
-    width: 600px; /* Ancho de 800px */
-    height: 400px; /* Alto de 500px */
+    width: 80%; /* Ancho de 800px */
+    height: 40%; /* Alto de 500px */
     background-color: #f2f2f2;
     padding: 30px 40px; /* Relleno superior de 30px y relleno derecho e izquierdo de 40px */
     border: 2px solid #ccc; /* Borde de 2px sólido */
@@ -133,5 +133,8 @@
     background-color: #003366; /* Nuevo color de fondo al pasar el mouse por encima */
     color: #ffffff; /* Nuevo color del texto al pasar el mouse por encima */
 }
-
+.containerflex{
+    width: 100%;
+    background-color: #ffffff;
+}
 
