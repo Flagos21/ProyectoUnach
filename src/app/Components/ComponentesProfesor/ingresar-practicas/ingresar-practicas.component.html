@@ -1,1 +1,28 @@
-<H1>ESTAS EN INGRESAR PRACTICAS</H1>
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+      <input type="text" class="form-control" formControlName="nombre" placeholder="Nombre Empresa">
+  </div>
+  <div class="mb-3">
+      <input type="text" class="form-control" formControlName="tutor" placeholder="Tutor Responsable">
+  </div>
+  <div class="mb-3">
+      <input type="text" class="form-control" formControlName="cargo" placeholder="Cargo">
+  </div>
+  <div class="mb-3">
+      <input type="text" class="form-control" formControlName="tipo" placeholder="Tipo Practica">
+  </div>
+  <div class="mb-3">
+    <textarea class="form-control" cols="30" rows="10" formControlName="descripcion" placeholder="Descripcion Actividades"></textarea>
+</div>
+<div class="mb-3">
+    <label for="estado">Estado Practica</label>
+    <select class="form-select" id="estado" name="estado" formControlName="estado">
+        <option value="opcion1">Opción 1</option>
+        <option value="opcion2">Opción 2</option>
+        <option value="opcion3">Opción 3</option>
+        <!-- Agrega más opciones si es necesario -->
+    </select>
+</div>
+
+  <input type="submit" value="Enviar" class="btn btn-info">
+</form>

@@ -13,7 +13,8 @@ export class AuthService {
     return from(
       this.auth.signInWithEmailAndPassword(params.email, params.password).then(
         (resp) => {
-          console.log('Inicio de sesión exitoso con Google', resp.user?.email);
+          console.log('Inicio de sesión exitoso', resp.user?.email);
+          this.router.navigate(['home-profesor']);
         },
         (error) => {
           //validacion de inicio de sesion erroneo
