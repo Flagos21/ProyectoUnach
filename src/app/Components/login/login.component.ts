@@ -25,31 +25,22 @@ export class LoginComponent {
   loginWithEmail() {
     if (this.loginForm.valid) {
       if (this.loginForm.get('email')?.valid) {
-        if (this.loginForm.value.password.length >= 6) {
+        if (this.loginForm.value.password.length >= 8) {
           this.authService.loginWithEmail({
             email: this.loginForm.value.email,
             password: this.loginForm.value.password,
           });
         } else {
-         
             {
               
             }
           ;
         }
         } else {
-
-          {
-           
-          }
-        ;
+          console.log("El correo esta invalido")
       }
     } else {
- 
-        {
-          
-        }
-      ;
+      console.log("No existe la cuenta")
     }
   }
 }
