@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { AngularFireModule} from '@angular/fire/compat'
 
 import { AppRoutingModule } from './app-routing.module';
@@ -33,6 +31,10 @@ import { EstadoIComponent } from './Components/ComponentesEstudiante/estado-i/es
 import { EstadoInComponent } from './Components/ComponentesEstudiante/estado-in/estado-in.component';
 import { EstadoFComponent } from './Components/ComponentesEstudiante/estado-f/estado-f.component';
 import { ReactiveFormsModule } from '@angular/forms';
+
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -77,6 +79,8 @@ import { ReactiveFormsModule } from '@angular/forms';
       measurementId: "G-VQ9B7YG3Y9"
     }),
     ReactiveFormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+    provideFirestore(() => getFirestore()),
   ],
   providers: [],
   bootstrap: [AppComponent]
