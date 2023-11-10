@@ -11,8 +11,8 @@ body {
 
 .white-stripe {
     background-color: white; /* Fondo blanco */
-    width: 500px; /* Ancho de la franja vertical */
-    height: 700px; /* Altura de la franja vertical (ajustar según tus necesidades) */
+    width: 31.5%; /* Ancho de la franja vertical */
+    height: 100%; /* Altura de la franja vertical (ajustar según tus necesidades) */
     display: flex;
     flex-direction: column; /* Orientación vertical */
     justify-content: center; /* Centra verticalmente el contenido */
@@ -20,14 +20,18 @@ body {
     padding: 20px; /* Espacio interno de la franja blanca */
     text-align: center;
     border-radius: 0px; /* Bordes redondeados para la franja */
-    background-image: url('\src\app\media\Simbolo_u.png');/* Imagen de fondo */
+    background-image: url('\src\app\media\Simbolo_u.png');  /* Imagen de fondo */
     background-size: 170%; /* Ajusta el tamaño de la imagen de fondo al 50% de la franja */
     background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
     background-position: center top; /* Alinea la imagen al centro arriba */
 }
 .container{
     background-color: white;
-    width: 100%;
+    width: 31.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     
     
 
@@ -43,7 +47,7 @@ body {
     /* Agrega otros estilos de fuente según sea necesario */
     background-color: #003366; /* Color de fondo del botón */
     color: #fff; /* Color del texto del botón */
-    width: 200px; /* Ancho fijo para todos los botones */
+    width: 40%; /* Ancho fijo para todos los botones */
     padding: 12px 40px; /* Espacio dentro del botón */
     text-decoration: none; /* Elimina el subrayado de los enlaces */
     margin: 20px 0; /* Espacio entre los botones verticalmente */
@@ -59,8 +63,9 @@ body {
 .btn-1{
     background-color: #003366;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 50%;
     transition: transform 0.3s ease;
+    outline: 1xp red solid;
 }
 
 .btn-1::after, .btn-1::before{
