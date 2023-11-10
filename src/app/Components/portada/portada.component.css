@@ -37,18 +37,6 @@ body {
     /* Posicionamiento */
     margin-bottom: 20px;
 }
-Con este cambio, el contenido dentro de .white-stripe se alineará en la parte superior del contenedor. Ajusta otros valores según sea necesario para lograr el diseño deseado.
-
-  /* Estilos de los botones */
-  
-  .buttons {
-    position: absolute; /* Los botones se colocan en una posición absoluta */
-    bottom: 0; /* Los botones se colocan en la parte inferior de la página */
-    width: 30%; /* Los botones ocupan todo el ancho de la página */
-    padding: 20px;
-    text-align: center;
-    z-index: 0; /* Los botones se colocan debajo de la franja blanca */
-  }
   
   .btn {
     font-family: "Amiri Quran Colored", sans-serif;
@@ -60,9 +48,13 @@ Con este cambio, el contenido dentro de .white-stripe se alineará en la parte s
     margin: 20px 0;
     text-align: center;
     position:relative;
+    border: 2px solid #000000;
+    border-radius: 7px;
+    transition: background-color 0.3s, color 0.3s;
   }
   
   .btn:hover {
-    background-color: #235a96;
+     background-color: #ffffff; /* Nuevo color de fondo al pasar el mouse por encima */
+    color: #003366;
   }
   
