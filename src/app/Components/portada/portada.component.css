@@ -33,6 +33,7 @@ body {
     border-radius: 10px;
     margin-bottom: 20px;
 }
+<<<<<<< HEAD
 
   /* Estilos de los botones */
   
@@ -44,6 +45,8 @@ body {
     text-align: center;
     z-index: 0; /* Los botones se colocan debajo de la franja blanca */
   }
+=======
+>>>>>>> 9f27738648e6ad18dd4447fc2226bdfc690d2984
   
   .btn {
     font-family: "Amiri Quran Colored", sans-serif;
@@ -63,4 +66,9 @@ body {
   .btn:hover {
      background-color: #ffffff; /* Nuevo color de fondo al pasar el mouse por encima */
     color: #003366;
+<<<<<<< HEAD
   }
+=======
+  }
+  
+>>>>>>> 9f27738648e6ad18dd4447fc2226bdfc690d2984

@@ -1,20 +1,41 @@
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos de la barra de búsqueda */
 .search-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px;
-    position: sticky; /* Fija la barra de búsqueda en su posición */
-    top: 0; /* La fija en la parte superior de la ventana */
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    /* Ajusta el orden de los elementos */
+    flex-direction: row;
 }
 
+/* Estilos de la barra de búsqueda */
 .search-input {
-    padding: 15px;
-    font-size: 16px;
-    border: 1px solid #ccc;
+    padding: 1px; /* Ajusta el tamaño del padding según sea necesario */
+    font-size: 30px;
+    border: 2px solid #ccc;
     border-radius: 8px;
+<<<<<<< HEAD
     width: 80%;
+=======
+    width: 70%; /* Barra de búsqueda ocupa el 100% del ancho */
+>>>>>>> 9f27738648e6ad18dd4447fc2226bdfc690d2984
     outline: none;
 }
+
 
 .search-input:focus {
     border-color: #0056b3;
@@ -24,22 +45,21 @@
     width: 40px;
     height: 40px;
     background-size: cover;
+    border-radius: 50%;
 }
 
 .left-image {
-    background-image: url('src/app/media/usuario.png'); 
-    width: 60px; /* Aumenta el ancho de la imagen */
-    height: 60px; /* Aumenta la altura de la imagen */
+    background-image: url('src/app/media/usuario.png');
 }
 
 .right-image:nth-child(1) {
-    background-image: url('src/app/media/notificacion.png'); /* Ruta de la primera imagen */
-    margin-right: 40px; /* Ajusta el margen derecho de la primera imagen */
+    background-image: url('src/app/media/notificacion.png');
+    margin-right: 20px;
 }
 
 .right-image:nth-child(2) {
-    background-image: url('src/app/media/mensaje.png'); /* Ruta de la segunda imagen */
-    margin-right: 0px; /* Ajusta el margen derecho de la segunda imagen */
+    background-image: url('src/app/media/mensaje.png');
+    margin-right: 0px;
 }
 
 .right-images {
@@ -48,7 +68,7 @@
 }
 
 .close-button {
-    background-color: #DA4747; /* Cambia el color del botón de cerrar a rojo */
+    background-color: #DA4747;
     border: none;
     border-radius: 10%;
     width: 80px;
@@ -59,70 +79,51 @@
 
 /* Estilos para los campos de información */
 .info-container {
-    margin: 10px 300px auto; /* Margen izquierdo de 20px, otros márgenes sin cambios */
-    width: 600px; /* Ancho de 800px */
-    height: 400px; /* Alto de 500px */
+    margin: 50px auto;
+    width: 80%;
+    height: auto;
     background-color: #f2f2f2;
-    padding: 30px 40px; /* Relleno superior de 30px y relleno derecho e izquierdo de 40px */
-    border: 2px solid #ccc; /* Borde de 2px sólido */
-    border-radius: 15px; /* Radio del borde de 15px */
+    padding: 100px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
 }
 
-
-.asignatura-input {
-    width: 400px;
-    padding: 5px;
-    margin-bottom: 10px; /* Añade margen inferior para reducir el espacio vertical */
-    margin-left: 82px;
-    
-}
-
-.id-asignatura-input {
-    width: 200px; /* Ancho personalizado para cada parte del Rut */
-    padding: 5px; /* Altura personalizada */
+.asignatura-input,
+.id-asignatura-input,
+.cantidad-creditos,
+.horas-lectivas {
+    width: 30%;
+    padding: 8px;
     margin-bottom: 10px;
-    margin-left: 47px;
 }
 
 /* Estilos para el menú desplegable */
-.cantidad-creditos {
-    width: 200px; /* Ancho personalizado */
-    padding: 5px; /* Altura personalizada */
-    margin-bottom: 10px;
-    margin-left: 22px;
-}
-
-/* Estilos para el campo Horas Lectivas */
+.cantidad-creditos,
 .horas-lectivas {
-    width: 200px; /* Ancho personalizado */
-    padding: 5px; /* Altura personalizada */
-    margin-bottom: 10px;
-    margin-left: 62px;
+    margin-left: 0; /* Ajusta el margen izquierdo */
 }
-
 
 /* Estilos para los botones */
 .botones-container {
-    display: flex; /* Activa el modelo de caja flexible en el contenedor de botones */
-    justify-content: space-between; /* Coloca los botones uno a la izquierda y otro a la derecha */
-    margin-top: 120px; /* Agrega margen superior para separarlos del contenido anterior */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .boton {
-    background-color: #D9D9D9; /* Color de fondo original */
-    color: #000000; /* Color del texto original */
-    padding: 30px 47.5px; /* Tamaño del botón */
+    background-color: #D9D9D9;
+    color: #000000;
+    padding: 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Agrega una transición suave para el cambio de color de fondo y del texto */
-    /* Agrega márgenes para separar los botones */
-    margin-right: 10px; /* Margen a la derecha del botón "Modificar asignatura" */
-    margin-left: 10px; /* Margen a la izquierda del botón "Crear asignatura" */
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 10px;
 }
 
 /* Estilos para los botones cuando el mouse está sobre ellos */
 .boton:hover {
-    background-color: #003366; /* Nuevo color de fondo al pasar el mouse por encima */
-    color: #ffffff; /* Nuevo color del texto al pasar el mouse por encima */
+    background-color: #003366;
+    color: #ffffff;
 }
