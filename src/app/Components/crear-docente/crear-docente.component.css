@@ -1,48 +1,66 @@
-.search-container {
+body {
+    font-family: sans-serif;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  .search-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px;
-    position: sticky; /* Fija la barra de búsqueda en su posición */
-    top: 0; /* La fija en la parte superior de la ventana */
-}
+    padding: 2%;
+    position: sticky;
+    top: 4px;
+    margin-left: 0%;
+    width: 90%;
+  }
 
-.search-input {
-    padding: 15px;
-    font-size: 16px;
-    border: 1px solid #ccc;
+  .search-input {
+    width: 80%;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 110%;
+    border: 2px solid #ccc;
     border-radius: 8px;
-    width: 1000px;
     outline: none;
-}
+    margin-left: 15px;
+
+  }
 
 .search-input:focus {
     border-color: #0056b3;
 }
 
 .left-image, .right-image {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-size: cover;
+    margin-right: 10px;
 }
 
-.left-image {
+.left-image:nth-child(1) {
     background-image: url('src/app/media/usuario.png'); 
-    width: 60px; /* Aumenta el ancho de la imagen */
-    height: 60px; /* Aumenta la altura de la imagen */
+    width: 50px; /* Aumenta el ancho de la imagen */
+    height: 50px; /* Aumenta la altura de la imagen */
+    
 }
 
 .right-image:nth-child(1) {
     background-image: url('src/app/media/notificacion.png'); /* Ruta de la primera imagen */
-    margin-right: 40px; /* Ajusta el margen derecho de la primera imagen */
+    margin-right: 20px; /* Ajusta el margen derecho de la primera imagen */
 }
 
 .right-image:nth-child(2) {
     background-image: url('src/app/media/mensaje.png'); /* Ruta de la segunda imagen */
-    margin-right: 0px; /* Ajusta el margen derecho de la segunda imagen */
+    margin-right: 10px; /* Ajusta el margen derecho de la segunda imagen */
 }
 
 .right-images {
+    display: flex;
+    align-items: center;
+}
+.left-image{
+    margin-right: 20px;
     display: flex;
     align-items: center;
 }
@@ -59,55 +77,80 @@
 
 /* Estilos para los campos de información */
 .info-container {
-    margin: 10px 300px auto; /* Margen izquierdo de 20px, otros márgenes sin cambios */
+    margin: 0% 0%; /* Margen izquierdo de 20px, otros márgenes sin cambios */
     width: 80%; /* Ancho de 800px */
-    height: 40%; /* Alto de 500px */
-    background-color: #f2f2f2;
+    height: 100%; /* Alto de 500px */
     padding: 30px 40px; /* Relleno superior de 30px y relleno derecho e izquierdo de 40px */
-    border: 2px solid #ccc; /* Borde de 2px sólido */
     border-radius: 15px; /* Radio del borde de 15px */
 }
 
 
 /* Estilos para el campo Nombre */
-.nombre-input {
-    width: 450px;
+.nombre-item{
+    width: 50%;
     padding: 5px;
-    margin-bottom: 10px; /* Añade margen inferior para reducir el espacio vertical */
-    margin-left: 57px;
+    margin-bottom: 5px; /* Añade margen inferior para reducir el espacio vertical */
+    margin-left:5px;
+}
+.nombre-input {
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 5px; /* Añade margen inferior para reducir el espacio vertical */
+    margin-left:5px;
     
 }
 
 /* Estilos para los campos de Rut */
-.rut-input-1 {
-    width: 200px; /* Ancho personalizado para cada parte del Rut */
+.rut-item{
+    width: 50%; /* Ancho personalizado para cada parte del Rut */
     padding: 5px; /* Altura personalizada */
-    margin-bottom: 0px;
-    margin-left: 87px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.rut-input-1 {
+    width: 20%; /* Ancho personalizado para cada parte del Rut */
+    padding: 5px; /* Altura personalizada */
+    margin-bottom: 1%;
+    margin-left: 5px;
 }
 
 .rut-input-2 {
-    width: 10px; /* Ancho personalizado para cada parte del Rut */
+    width: 1%; /* Ancho personalizado para cada parte del Rut */
     padding: 5px; /* Altura personalizada */
-    margin-left: 4.5px;
+    margin-left: 5px;
 }
 
 /* Agrega margen al contenedor del menú desplegable */
 .contrato-item {
-    margin: 10px 0; /* Ajusta el valor del margen según tus necesidades */
+    width: 70%; /* Ancho personalizado para cada parte del Rut */
+    padding: 5px; /* Altura personalizada */
+    margin-bottom: 5px;
+    margin-left: 5px;
 }
 
 /* Estilos para el menú desplegable */
 .contrato-input {
-    width: 250px;
+    width: 30%;
     padding: 5px;
+    margin: 5px;
     /* Otros estilos para el menú desplegable */
 }
+.label{
+    font-size: 16px;
+    color:#7f7e9b;
+    text-align: left;
+}
 
-.email-input {
-    width: 237px; /* Ancho personalizado */
+.email-item {
+    width: 50%; /* Ancho personalizado para cada parte del Rut */
     padding: 5px; /* Altura personalizada */
-    margin-left: 70px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.email-input {
+    width: 30%; /* Ancho personalizado */
+    padding: 5px; /* Altura personalizada */
+    margin-left: 1%;
 }
 
 .botones-container {
@@ -119,12 +162,12 @@
 .boton {
     background-color: #D9D9D9; /* Color de fondo original */
     color: #000000; /* Color del texto original */
-    padding: 30px 47.5px; /* Tamaño del botón */
+    padding: 1% 2%; /* Tamaño del botón */
     border: none;
     border-radius: 5px;
     margin: 5px; /* Espacio entre los botones */
     cursor: pointer;
-    margin-top: 100px; /* Espacio entre la parte superior y los botones */
+    margin-top: 20%; /* Espacio entre la parte superior y los botones */
     transition: background-color 0.3s, color 0.3s; /* Agrega una transición suave para el cambio de color de fondo y del texto */
 }
 
@@ -135,6 +178,10 @@
 }
 .containerflex{
     width: 100%;
+    height: 90%;
     background-color: #ffffff;
+}
+.h1{
+    position: center ;
 }
 

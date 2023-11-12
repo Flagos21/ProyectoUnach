@@ -2,8 +2,8 @@
 
 body {
     font-family: sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +19,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 2%;
     text-align: center;
     width: 35%; /* Ancho completo en dispositivos móviles */
     height: 100%; /* Altura de 500px en PC */
@@ -31,13 +31,8 @@ body {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    border: 2px solid #003366;
-    box-shadow: 0 0 10px rgba(0, 51, 102, 0.5);
-
-    /* Posicionamiento */
     margin-bottom: 20px;
 }
-Con este cambio, el contenido dentro de .white-stripe se alineará en la parte superior del contenedor. Ajusta otros valores según sea necesario para lograr el diseño deseado.
 
   /* Estilos de los botones */
   
@@ -60,9 +55,12 @@ Con este cambio, el contenido dentro de .white-stripe se alineará en la parte s
     margin: 20px 0;
     text-align: center;
     position:relative;
+    border: 2px solid #000000;
+    border-radius: 7px;
+    transition: background-color 0.3s, color 0.3s;
   }
-  
+
   .btn:hover {
-    background-color: #235a96;
+     background-color: #ffffff; /* Nuevo color de fondo al pasar el mouse por encima */
+    color: #003366;
   }
-  
