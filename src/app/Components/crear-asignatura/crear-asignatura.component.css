@@ -66,53 +66,40 @@ body {
   }
   
   /* Estilos para el contenedor de información */
-  .info-container {
-    margin: 50px auto;
-    width: 80%;
-    height: auto;
-    background-color: #f2f2f2;
-    padding: 100px;
-    border: 2px solid #ccc;
-    border-radius: 15px;
-  }
-  
-  /* Estilos para los campos de información */
+.info-container {
+  margin: 50px auto;
+  width: 80%;
+  height: auto;
+  background-color: #f2f2f2;
+  padding: 100px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+}
+
+/* Estilos para los campos de información */
+.asignatura-item,
+.id-asignatura-item,
+.cantidad-creditos-item,
+.horas-lectivas-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.asignatura-item label,
+.id-asignatura-item label,
+.cantidad-creditos-item label,
+.horas-lectivas-item label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
   .asignatura-item,
   .id-asignatura-item,
   .cantidad-creditos-item,
   .horas-lectivas-item {
-    display: flex;
-    flex-direction: column;
+    display: block;
     margin-bottom: 20px;
   }
-  
-  .asignatura-item label,
-  .id-asignatura-item label,
-  .cantidad-creditos-item label,
-  .horas-lectivas-item label {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  @media (max-width: 992px) {
-    .asignatura-item,
-    .id-asignatura-item,
-    .cantidad-creditos-item,
-    .horas-lectivas-item {
-      width: 50%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .asignatura-item,
-    .id-asignatura-item,
-    .cantidad-creditos-item,
-    .horas-lectivas-item
-    .search-input {
-      width: 100%;
-      margin-top: 10px;
-    }
-
-    
-  }
-  
+}

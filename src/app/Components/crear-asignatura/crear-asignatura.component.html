@@ -40,46 +40,5 @@
       <button class="boton">Crear asignatura</button>
     </div>
   </div>
-
-    <!-- <div class="search-container">
-        <div class="left-image"></div>
-        <input type="text" class="search-input" placeholder="Buscar...">
-        <div class="right-images">
-            <div class="right-image notificacion"></div>
-            <div class="right-image mensaje"></div>
-        </div>
-        <button class="close-button" (click)="redirigirPortada()">Cerrar</button>
-    </div> -->
-
-<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
-    <div class="info-container">
-        <div class="mb-3">
-            <label class="form-label">Id de Asignatura:</label>
-            <input type="text" class="form-control" formControlName="id_asignatura">
-        </div>
-
-        <div class="mb-3">
-            <label class="form-label">Asignatura:</label>
-            <input type="text" class="form-control" formControlName="nombre">
-        </div>
-        
-        <div class="mb-3">
-            <label class="form-label">Cantidad de creditos:</label>
-            <input type="text" class="form-control" formControlName="creditos">
-        </div>
-        
-        <div class="mb-3">
-            <label class="form-label">Horas lectivas:</label>
-            <input type="text" class="form-control" formControlName="horas_lectivas">
-        </div>
-
-        <input type="submit" value="Enviar" class="btn btn-info">
-        
-        <!-- <div class="botones-container">
-            <button class="boton">Modificar asignatura</button>
-            <button class="boton">Crear asignatura</button>
-        </div> -->
-    </div>
-</form>
 </body>
 </html>

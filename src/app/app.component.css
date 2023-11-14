@@ -27,18 +27,18 @@
 }
 
 .left-image {
-    background-image: url('src/app/media/usuario.png'); 
+    background-image: url('/src/app/media/usuario.png'); 
     width: 60px; /* Aumenta el ancho de la imagen */
     height: 60px; /* Aumenta la altura de la imagen */
 }
 
 .right-image:nth-child(1) {
-    background-image: url('src/app/media/notificacion.png'); /* Ruta de la primera imagen */
+    background-image: url('/src/app/media/notificacion.png'); /* Ruta de la primera imagen */
     margin-right: 40px; /* Ajusta el margen derecho de la primera imagen */
 }
 
 .right-image:nth-child(2) {
-    background-image: url('src/app/media/mensaje.png'); /* Ruta de la segunda imagen */
+    background-image: url('/src/app/media/mensaje.png'); /* Ruta de la segunda imagen */
     margin-right: 0px; /* Ajusta el margen derecho de la segunda imagen */
 }
 
