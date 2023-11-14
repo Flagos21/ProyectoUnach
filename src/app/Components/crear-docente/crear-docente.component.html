@@ -7,24 +7,25 @@
     <link rel="stylesheet" type="text/css" href="crear-docente.component.css">
 </head>
 <body>
-    <div class="">
-        <div class="info-container">
-            <div class="left-image"></div>
-         <input type="text" class="search-input , container" placeholder="Buscar...">
-         <div class="right-images">
-            <div class="right-image notificacion"></div>
-            <div class="right-image mensaje"></div>
+  
+    <div class="search-container">
+        <div class="left-image"></div>
+        <input type="text" class="search-input" placeholder="Buscar...">
+        <div class="right-images">
+            <div class="right-image " ></div>
+            <div class="right-image "></div>
         </div>
         <button class="close-button" (click)="redirigirPortada()">Cerrar</button>
-        </div>
+    </div>
 
     <div class="containerflex" >
+        <h1 >Crear docente</h1>
         <div class="nombre-item">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" class="nombre-input" placeholder="">
         </div>
         <div class="rut-item">
-            <label for="rut">Rut:</label>
+            <label class="label" for="rut">Rut:</label>
             <input type="text" id="rut1" class="rut-input-1" placeholder="">
             <span> -</span>
             <input type="text" id="rut2" class="rut-input-2" placeholder="">
@@ -38,7 +39,6 @@
             </select>
         </div>
         
-        
         <div class="email-item">
             <label for="email">Email:</label>
             <input type="text" id="email" class="email-input" placeholder="">
@@ -49,6 +49,6 @@
             <button class="boton">Crear docente</button>
         </div>
     </div>
-</div>
+
 </body>
 </html>

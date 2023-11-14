@@ -1,13 +1,51 @@
 body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    font-family: sans-serif;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Estilos del div blanco */
+  
+  .white-stripe {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    text-align: center;
+    width: 35%; /* Ancho completo en dispositivos móviles */
+    height: 100%; /* Altura de 500px en PC */
+    border-radius: 0px; /* Elimina los bordes redondeados en dispositivos móviles */
+  }
+  
+  /* Estilos de la imagen */
+  .white-stripeimg {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
+
+
+  /* Estilos de los botones */
+  
+  .buttons {
+    position: absolute; /* Los botones se colocan en una posición absoluta */
+    bottom: 0; /* Los botones se colocan en la parte inferior de la página */
+    width: 30%; /* Los botones ocupan todo el ancho de la página */
+    padding: 20px;
+    text-align: center;
+    z-index: 0; /* Los botones se colocan debajo de la franja blanca */
+  }
+
+
+ 
 
 .white-stripe {
   background-color: white;
@@ -45,9 +83,12 @@ body {
     border-radius: 7px;
     transition: background-color 0.3s, color 0.3s;
   }
-  
+
   .btn:hover {
      background-color: #ffffff; /* Nuevo color de fondo al pasar el mouse por encima */
     color: #003366;
+
   }
+
+  
   
