@@ -17,28 +17,36 @@
     <button class="close-button" (click)="redirigirPortada()">Cerrar</button>
 </div>
 
-  <div class="info-container">
-    <div class="asignatura-item">
-      <label for="asignatura">Asignatura:</label>
-      <input type="text" id="asignatura" class="asignatura-input" placeholder="">
-    </div>
-    <div class="id-asignatura-item">
-      <label for="id_asignatura">Id de Asignatura:</label>
-      <input type="text" id="id_asignatura" class="id-asignatura-input" placeholder="">
-    </div>
-    <div class="cantidad-creditos-item">
-      <label for="cantidad-creditos">Cantidad de creditos:</label>
-      <input type="text" id="creditos" class="cantidad-creditos" placeholder="">
-    </div>
-    <div class="horas-lectivas-item">
-      <label for="horas-lectivas">Horas lectivas:</label>
-      <input type="text" id="horas-lectivas" class="horas-lectivas" placeholder="">
-    </div>
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="info-container">
+        <div class="mb-3">
+            <label class="form-label">Id de Asignatura:</label>
+            <input type="text" class="form-control" formControlName="id_asignatura">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Asignatura:</label>
+            <input type="text" class="form-control" formControlName="nombre">
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">Cantidad de creditos:</label>
+            <input type="text" class="form-control" formControlName="creditos">
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">Horas lectivas:</label>
+            <input type="text" class="form-control" formControlName="horas_lectivas">
+        </div>
+
+        <input type="submit" value="Enviar" class="btn btn-info">
+        </div> 
+</form>
 
     <div class="botones-container">
       <button class="boton">Modificar asignatura</button>
       <button class="boton">Crear asignatura</button>
+      <input type="submit" value="Enviar" class="btn btn-info">
     </div>
-  </div>
 </body>
 </html>
