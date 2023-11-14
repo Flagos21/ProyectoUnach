@@ -3,154 +3,110 @@ body {
     margin: 1px;
     padding: 1px;
   }
-
+  
   .search-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2%;
     position: sticky;
-    top: 4px;
+    top: 4;
     margin-left: 0%;
-    width: 90%;
   }
-
+  
   .search-input {
-    width: 80%;
-    justify-content: space-between;
+    width: 79%;
     padding: 5px;
-    font-size: 110%;
+    font-size: 200%;
     border: 2px solid #ccc;
     border-radius: 8px;
     outline: none;
-    margin-left: 15px;
-
+    margin-left: 1%;
   }
-
-.search-input:focus {
+  
+  .search-input:focus {
     border-color: #0056b3;
-}
-
-.left-image, .right-image {
-    width: 50px;
-    height: 50px;
-    background-size: cover;
-    margin-right: 10px;
-}
-
-.left-image:nth-child(1) {
-    background-image: url('/src/app/media/usuario.png'); 
-    width: 50px; /* Aumenta el ancho de la imagen */
-    height: 50px; /* Aumenta la altura de la imagen */
-    
-}
-
-.right-image:nth-child(1) {
-    background-image: url('/src/app/media/notificacion.png'); /* Ruta de la primera imagen */
-    margin-right: 20px; /* Ajusta el margen derecho de la primera imagen */
-}
-
-.right-image:nth-child(2) {
-    background-image: url('/src/app/media/mensaje.png'); /* Ruta de la segunda imagen */
-    margin-right: 10px; /* Ajusta el margen derecho de la segunda imagen */
-}
-
-.right-images {
-    display: flex;
-    align-items: center;
-}
-.left-image{
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.close-button {
-    background-color: #DA4747; /* Cambia el color del botón de cerrar a rojo */
-    border: none;
-    border-radius: 10%;
-    width: 80px;
+  }
+  
+  .left-image, .right-image {
+    width: 40px;
     height: 40px;
-    font-size: 20px;
-    cursor: pointer;
-}
+    background-size: cover;
+  }
+  
+  .left-image:nth-child(1) {
+    background-image: url('/assets/img/usuario.png'); 
+    width: 45px; /* Aumenta el ancho de la imagen */
+    height: 45px; /* Aumenta la altura de la imagen */
+    
+  }
+  
+  .right-image:nth-child(1) {
+    background-image: url('/assets/img/notificacion.png'); /* Ruta de la primera imagen */
+    margin-right: 10px; /* Ajusta el margen derecho de la primera imagen */
+  }
+  
+  .right-image:nth-child(2) {
+    background-image: url('/assets/img/mensaje.png'); /* Ruta de la segunda imagen */
+    margin-right: 0px; /* Ajusta el margen derecho de la segunda imagen */
+  }
+  
+  .right-images {
+    display: flex;
+    align-items: center;
+  }
+    .close-button {
+      background-color: #DA4747;
+      border: none;
+      border-radius: 10%;
+      width: 80px;
+      height: 40px;
+      font-size: 20px;
+      cursor: pointer;
+    }
 
 /* Estilos para los campos de información */
-.info-container {
-    margin: 0% 0%; /* Margen izquierdo de 20px, otros márgenes sin cambios */
-    width: 80%; /* Ancho de 800px */
-    height: 100%; /* Alto de 500px */
-    padding: 30px 40px; /* Relleno superior de 30px y relleno derecho e izquierdo de 40px */
-    border-radius: 15px; /* Radio del borde de 15px */
-}
-
-
+.containerflex {
+    margin: 50px auto;
+    width: 80%;
+    height: auto;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+  }
+  
+  
 /* Estilos para el campo Nombre */
-.nombre-item{
-    width: 50%;
-    padding: 5px;
-    margin-bottom: 5px; /* Añade margen inferior para reducir el espacio vertical */
-    margin-left:5px;
-}
-.nombre-input {
-    width: 50%;
-    padding: 5px;
-    margin-bottom: 5px; /* Añade margen inferior para reducir el espacio vertical */
-    margin-left:5px;
-    
-}
-
-/* Estilos para los campos de Rut */
-.rut-item{
-    width: 50%; /* Ancho personalizado para cada parte del Rut */
-    padding: 5px; /* Altura personalizada */
-    margin-bottom: 5px;
-    margin-left: 5px;
-}
-.rut-input-1 {
-    width: 20%; /* Ancho personalizado para cada parte del Rut */
-    padding: 5px; /* Altura personalizada */
-    margin-bottom: 1%;
-    margin-left: 5px;
-}
-
-.rut-input-2 {
-    width: 1%; /* Ancho personalizado para cada parte del Rut */
-    padding: 5px; /* Altura personalizada */
-    margin-left: 5px;
-}
-
-/* Agrega margen al contenedor del menú desplegable */
-.contrato-item {
-    width: 70%; /* Ancho personalizado para cada parte del Rut */
-    padding: 5px; /* Altura personalizada */
-    margin-bottom: 5px;
-    margin-left: 5px;
-}
-
-/* Estilos para el menú desplegable */
-.contrato-input {
-    width: 30%;
-    padding: 5px;
-    margin: 5px;
-    /* Otros estilos para el menú desplegable */
-}
-.label{
-    font-size: 16px;
-    color:#7f7e9b;
-    text-align: left;
-}
-
+/* Estilos para los campos de información */
+.nombre-item,
+.rut-item,
+.contrato-item,
 .email-item {
-    width: 50%; /* Ancho personalizado para cada parte del Rut */
-    padding: 5px; /* Altura personalizada */
-    margin-bottom: 5px;
-    margin-left: 5px;
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
 }
+
+.nombre-input,
+.rut-input-1,
+.rut-input-2,
+.contrato-input,
 .email-input {
-    width: 30%; /* Ancho personalizado */
-    padding: 5px; /* Altura personalizada */
-    margin-left: 1%;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .nombre-item,
+  .rut-item,
+  .contrato-item,
+  .email-item {
+    display: block;
+  }
 }
 
 .botones-container {
@@ -176,11 +132,7 @@ body {
     background-color: #003366; /* Nuevo color de fondo al pasar el mouse por encima */
     color: #ffffff; /* Nuevo color del texto al pasar el mouse por encima */
 }
-.containerflex{
-    width: 100%;
-    height: 90%;
-    background-color: #ffffff;
-}
+
 .h1{
     position: center ;
 }
