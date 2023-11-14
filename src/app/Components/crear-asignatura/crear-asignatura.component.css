@@ -28,11 +28,8 @@ body {
     font-size: 30px;
     border: 2px solid #ccc;
     border-radius: 8px;
-<<<<<<< HEAD
     width: 80%;
-=======
     width: 70%; /* Barra de búsqueda ocupa el 100% del ancho */
->>>>>>> 9f27738648e6ad18dd4447fc2226bdfc690d2984
     outline: none;
 }
 
@@ -49,16 +46,16 @@ body {
 }
 
 .left-image {
-    background-image: url('src/app/media/usuario.png');
+    background-image: url('/assets/media/usuario.png');
 }
 
 .right-image:nth-child(1) {
-    background-image: url('src/app/media/notificacion.png');
+    background-image: url('/assets/media/notificacion.png');
     margin-right: 20px;
 }
 
 .right-image:nth-child(2) {
-    background-image: url('src/app/media/mensaje.png');
+    background-image: url('/assets/media/mensaje.png');
     margin-right: 0px;
 }
 
