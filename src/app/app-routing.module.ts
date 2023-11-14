@@ -26,11 +26,13 @@ import { EstadoInComponent } from './Components/ComponentesEstudiante/estado-in/
 import { EstadoFComponent } from './Components/ComponentesEstudiante/estado-f/estado-f.component';
 import { MiPracticaComponent } from './Components/ComponentesEstudiante/mi-practica/mi-practica.component';
 import { IngresarBitacoraComponent } from './Components/ComponentesEstudiante/ingresar-bitacora/ingresar-bitacora.component';
+import { RegisterComponent } from './Components/register/register.component';
 
 // Rutas de navegacion
 const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent},
   {path: 'home', component: HomeComponent},
 
 // Rutas de navegacion 'ComponentesProfesor'

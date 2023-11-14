@@ -19,7 +19,7 @@ export class IngresarPracticasComponent implements OnInit {
       cargo: new FormControl(),
       tipo: new FormControl(),
       descripcion: new FormControl(),
-      estado: new FormControl()
+      estado: new FormControl('Aprobado')
     })
   }
 

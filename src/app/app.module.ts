@@ -35,6 +35,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment';
+import { RegisterComponent } from './Components/register/register.component';
+import { provideAuth,getAuth } from '@angular/fire/auth';
 
 @NgModule({
   declarations: [
@@ -65,22 +67,15 @@ import { environment } from 'src/environments/environment';
     EstadoIComponent,
     EstadoInComponent,
     EstadoFComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp({ 
-      apiKey: "AIzaSyDJLl63eIqm3UZbAgnQwDQa6m_lt6RhfMs",
-      authDomain: "proyecto-unach.firebaseapp.com",
-      projectId: "proyecto-unach",
-      storageBucket: "proyecto-unach.appspot.com",
-      messagingSenderId: "341018038115",
-      appId: "1:341018038115:web:9879e451758c5224ff4d56",
-      measurementId: "G-VQ9B7YG3Y9"
-    }),
     ReactiveFormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
     provideFirestore(() => getFirestore()),
+    provideAuth(() => getAuth()),
   ],
   providers: [],
   bootstrap: [AppComponent]

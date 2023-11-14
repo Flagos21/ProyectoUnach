@@ -5,7 +5,7 @@
                 <img src="assets/images/LogoUnach.png" alt="Logo de la UNACH" class="login-logo-unach">
             </div>
             <h1 class="iniciar-sesion">Iniciar Sesión</h1>
-            <form [formGroup]="loginForm">
+            <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
                 <div>
                     <input placeholder="Ingresa tu correo electronico" class="usuario-input" type="email" id="email" formControlName="email">
                 </div>
@@ -16,9 +16,7 @@
                     <span class="recuerdame-text">Recuérdame</span>
                         <a class="texto-olvidar" href="mailto:fabianpavez@alu.unach.cl">¿Olvidaste tu contraseña?</a>
                 <div>
-                <button class="entrar-button" (click)="loginWithEmail()">
-                    Ingresar
-                </button>
+                    <input class="entrar-button" type="submit" value="Enviar">
                     </div>
             </form>
             <div>
