@@ -91,7 +91,6 @@ body {
 
 .nombre-input,
 .rut-input-1,
-.rut-input-2,
 .contrato-input,
 .email-input {
   width: 100%;
@@ -123,7 +122,7 @@ body {
     border-radius: 5px;
     margin: 5px; /* Espacio entre los botones */
     cursor: pointer;
-    margin-top: 20%; /* Espacio entre la parte superior y los botones */
+    margin-top: 5%; /* Espacio entre la parte superior y los botones */
     transition: background-color 0.3s, color 0.3s; /* Agrega una transición suave para el cambio de color de fondo y del texto */
 }
 
