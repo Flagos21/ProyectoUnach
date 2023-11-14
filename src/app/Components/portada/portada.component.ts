@@ -20,4 +20,8 @@ export class PortadaComponent {
     this.router.navigate(['/asignar-asignatura']); // Reemplaza 'otro-componente' con la ruta de tu componente de destino
   }
 
+  redirigirListarAsignatura() {
+    this.router.navigate(['/asignar-asignatura']); // Reemplaza 'otro-componente' con la ruta de tu componente de destino
+  }
+
 }
