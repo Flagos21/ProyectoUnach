@@ -11,6 +11,7 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 
 import { ReactiveFormsModule } from '@angular/forms';
+//import { BarraBusquedaComponent } from './Components/barra-busqueda/barra-busqueda.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     PortadaComponent,
     CrearDocenteComponent,
     CrearAsignaturaComponent,
-    AsignarAsignaturaComponent
+    AsignarAsignaturaComponent,
+    
   ],
   imports: [
     BrowserModule,
