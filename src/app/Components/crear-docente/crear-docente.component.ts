@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-crear-docente',
+  selector: 'app-crear-docente',  
   templateUrl: './crear-docente.component.html',
   styleUrls: ['./crear-docente.component.css']
 })

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Asignatura from '../interfaces/asignatura.interface';
 import { CargaAcademicaService } from 'src/app/services/carga-academica.service';
-
+import {Router} from '@angular/router';
 @Component({
   selector: 'asignar-asignatura',
   templateUrl: './asignar-asignatura.component.html',
@@ -11,8 +11,9 @@ export class AsignarAsignaturaComponent implements OnInit {
   asignatura: Asignatura[];
 
   constructor (
-    private cargaAcademica: CargaAcademicaService
+    private cargaAcademica: CargaAcademicaService, private router: Router
   ){
+    
     this.asignatura = [{
       id_asignatura: 'pruebaId',
       nombre: 'pruebaNombre',
@@ -21,6 +22,9 @@ export class AsignarAsignaturaComponent implements OnInit {
 
     }]
 
+  }
+  redirigirPortada() {
+    this.router.navigate(['./portada']); // Reemplaza 'otro-componente' con la ruta de tu componente de destino
   }
 
   ngOnInit(): void {
