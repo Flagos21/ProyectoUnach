@@ -15,9 +15,9 @@ export default interface Bitacora {
 }
 
 export interface UserI{
-    nombre: String;
-    email: String;
-    uid: String;
-    password: String;
+    nombre: string;
+    email: string;
+    uid: string;
+    password: string;
     perfil: 'usuario' | 'admin',
 }
