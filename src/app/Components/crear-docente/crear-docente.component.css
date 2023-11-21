@@ -26,7 +26,7 @@ body {
   
   .search-input:focus {
     border-color: #0056b3;
-<<<<<<< HEAD
+
 }
 
 .left-image, .right-image {
@@ -68,12 +68,10 @@ body {
     border: none;
     border-radius: 10%;
     width: 80px;
-=======
   }
   
   .left-image, .right-image {
     width: 40px;
->>>>>>> 4ba0d2e80fe99315002473f8bf3f0a4fdf8cec57
     height: 40px;
     background-size: cover;
   }
