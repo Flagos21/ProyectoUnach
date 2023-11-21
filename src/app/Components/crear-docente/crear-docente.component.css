@@ -26,10 +26,54 @@ body {
   
   .search-input:focus {
     border-color: #0056b3;
+<<<<<<< HEAD
+}
+
+.left-image, .right-image {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.left-image:nth-child(1) {
+    background-image: url('/assets/media/usuario.png'); 
+    width: 50px; /* Aumenta el ancho de la imagen */
+    height: 50px; /* Aumenta la altura de la imagen */
+    
+}
+
+.right-image:nth-child(1) {
+    background-image: url('/assets/media/notificacion.png'); /* Ruta de la primera imagen */
+    margin-right: 20px; /* Ajusta el margen derecho de la primera imagen */
+}
+
+.right-image:nth-child(2) {
+    background-image: url('/assets/media/mensaje.png'); /* Ruta de la segunda imagen */
+    margin-right: 10px; /* Ajusta el margen derecho de la segunda imagen */
+}
+
+.right-images {
+    display: flex;
+    align-items: center;
+}
+.left-image{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.close-button {
+    background-color: #DA4747; /* Cambia el color del botón de cerrar a rojo */
+    border: none;
+    border-radius: 10%;
+    width: 80px;
+=======
   }
   
   .left-image, .right-image {
     width: 40px;
+>>>>>>> 4ba0d2e80fe99315002473f8bf3f0a4fdf8cec57
     height: 40px;
     background-size: cover;
   }
@@ -91,7 +135,6 @@ body {
 
 .nombre-input,
 .rut-input-1,
-.rut-input-2,
 .contrato-input,
 .email-input {
   width: 100%;
@@ -123,7 +166,7 @@ body {
     border-radius: 5px;
     margin: 5px; /* Espacio entre los botones */
     cursor: pointer;
-    margin-top: 20%; /* Espacio entre la parte superior y los botones */
+    margin-top: 5%; /* Espacio entre la parte superior y los botones */
     transition: background-color 0.3s, color 0.3s; /* Agrega una transición suave para el cambio de color de fondo y del texto */
 }
 

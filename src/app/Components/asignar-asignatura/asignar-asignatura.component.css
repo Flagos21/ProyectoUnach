@@ -1,0 +1,147 @@
+body {
+    font-family: sans-serif;
+    margin: 1px;
+    padding: 1px;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    position: sticky;
+    top: 4;
+    margin-left: 0%;
+  }
+  
+  .search-input {
+    width: 79%;
+    padding: 5px;
+    font-size: 200%;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    margin-left: 1%;
+  }
+  
+  .search-input:focus {
+    border-color: #0056b3;
+  }
+  
+  .left-image, .right-image {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+  }
+  
+  .left-image:nth-child(1) {
+    background-image: url('/assets/img/usuario.png'); 
+    width: 45px; /* Aumenta el ancho de la imagen */
+    height: 45px; /* Aumenta la altura de la imagen */
+    
+  }
+  
+  .right-image:nth-child(1) {
+    background-image: url('/assets/img/notificacion.png'); /* Ruta de la primera imagen */
+    margin-right: 10px; /* Ajusta el margen derecho de la primera imagen */
+  }
+  
+  .right-image:nth-child(2) {
+    background-image: url('/assets/img/mensaje.png'); /* Ruta de la segunda imagen */
+    margin-right: 0px; /* Ajusta el margen derecho de la segunda imagen */
+  }
+  
+  .right-images {
+    display: flex;
+    align-items: center;
+  }
+    .close-button {
+      background-color: #DA4747;
+      border: none;
+      border-radius: 10%;
+      width: 80px;
+      height: 40px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+/* Estilos para los campos de información */
+.containerflex {
+    margin: 50px auto;
+    width: 80%;
+    height: auto;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+  }
+  
+  
+/* Estilos para el campo Nombre */
+/* Estilos para los campos de información */
+.nombre-item,
+.rut-item,
+.semestre-item,
+.año-item,
+.asignatura-item,
+.id-asignatura-item,
+.cantidad-horas-item {
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.nombre-input,
+.rut-input-1,
+.semestre-input,
+.año-input,
+.asignatura-input,
+.id-asignatura-input,
+.cantidad-horas-input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .nombre-item,
+  .rut-item,
+  .semestre-item,
+  .año-item,
+  .asignatura-item,
+  .id-asignatura-item,
+  .cantidad-horas-item {
+    display: block;
+  }
+}
+
+.botones-container {
+    text-align: center; /* Centra los botones horizontalmente dentro del contenedor */
+    margin-top: 20px; /* Agrega margen superior para separarlos del contenido anterior */
+}
+
+/* Estilos para los botones */
+.boton {
+    background-color: #D9D9D9; /* Color de fondo original */
+    color: #000000; /* Color del texto original */
+    padding: 1% 2%; /* Tamaño del botón */
+    border: none;
+    border-radius: 5px;
+    margin: 5px; /* Espacio entre los botones */
+    cursor: pointer;
+    margin-top: 5%; /* Espacio entre la parte superior y los botones */
+    transition: background-color 0.3s, color 0.3s; /* Agrega una transición suave para el cambio de color de fondo y del texto */
+}
+
+/* Estilos para los botones cuando el mouse está sobre ellos */
+.boton:hover {
+    background-color: #003366; /* Nuevo color de fondo al pasar el mouse por encima */
+    color: #ffffff; /* Nuevo color del texto al pasar el mouse por encima */
+}
+
+.h1{
+    position: center ;
+}
+
