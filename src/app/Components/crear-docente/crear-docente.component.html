@@ -6,58 +6,61 @@
     <title>Buscador con Imágenes</title>
     <link rel="stylesheet" type="text/css" href="crear-docente.component.css">
 </head>
-<body>
-  
-    <div class="search-container">
-        <div class="left-image"></div>
-        <input type="text" class="search-input" placeholder="Buscar...">
-        <div class="right-images">
-            <div class="right-image " ></div>
-            <div class="right-image "></div>
+    <body>
+        <div class="search-container">
+            <div class="left-image"></div>
+            <input type="text" class="search-input" placeholder="Buscar...">
+            <div class="right-images">
+                <div class="right-image " ></div>
+                <div class="right-image "></div>
+            </div>
+            <button class="close-button" (click)="redirigirPortada()">Cerrar</button>
         </div>
-        <button class="close-button" (click)="redirigirPortada()">Cerrar</button>
-    </div>
-
-    <div class="containerflex" >
-        <h1 >Crear docente</h1>
-        <div class="rut-item">
-            <label class="label" for="rut">Rut:</label>
-            <input type="text" id="rut1" class="rut-input-1" placeholder="">
+    
+        <div class="containerflex" >
+            <h1 >Crear docente</h1>
+            <div class="rut-item">
+                <label class="label" for="rut">Rut:</label>
+                <input type="text" id="rut1" class="rut-input-1" placeholder="">
+            </div>
+            
+            <div class="nombre-item">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" class="nombre-input" placeholder="">
+            </div>
+    
+            <div class="profesion-item">
+                <label for="profesion">Profesion:</label>
+                <input type="text" id="profesion" class="profesion-input" placeholder="">
+            </div>
+    
+            <div class="contrato-item">
+    
+            
+    
+            <div class="contrato-item">
+                <label for="estado">Estado Practica</label>
+                <select class="contrato-input" id="estado" name="estado" formControlName="estado">
+                    <option value="contrato">Contrato</option>
+                    <option value="horario">Horario</option>
+                </select>
+            </div>
+            
+            <div class="horas-item">
+                <label for="horas">Horas contratado:</label>
+                <input type="text" id="horas" class="horas-input" placeholder="">
+            </div>
+            
+            <div class="email-item">
+                <label for="email">Email:</label>
+                <input type="text" id="email" class="email-input" placeholder="">
+            </div>
+            <div class="botones-container">
+                <button class="boton">Estado docente</button>
+                <button class="boton">Modificar docente</button>
+                <button class="boton">Crear docente</button>
+                <input type="submit" value="Enviar" class="btn btn-info">
+            </div>
         </div>
-        
-        <div class="nombre-item">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" class="nombre-input" placeholder="">
-        </div>
-
-        <div class="profesion-item">
-            <label for="profesion">Profesion:</label>
-            <input type="text" id="profesion" class="profesion-input" placeholder="">
-        </div>
-
-        <div class="contrato-item">
-            <label for="tipo-contrato">Tipo de Contrato:</label>
-            <select id="tipo-contrato" class="contrato-input">
-                <option value="contrato">Contrato</option>
-                <option value="horario">Horario</option>
-            </select>
-        </div>
-        
-        <div class="horas-item">
-            <label for="horas">Horas contratado:</label>
-            <input type="text" id="horas" class="horas-input" placeholder="">
-        </div>
-        
-        <div class="email-item">
-            <label for="email">Email:</label>
-            <input type="text" id="email" class="email-input" placeholder="">
-        </div>
-        <div class="botones-container">
-            <button class="boton">Estado docente</button>
-            <button class="boton">Modificar docente</button>
-            <button class="boton">Crear docente</button>
-        </div>
-    </div>
-
-</body>
+    </body>
 </html>
