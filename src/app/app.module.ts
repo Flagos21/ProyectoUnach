@@ -35,9 +35,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDatepickerModule } from '@angular/material/datepicker';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { MatInputModule } from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
 @NgModule({
   declarations: [
+    
     AppComponent,
     LoginComponent,
     PagenotfoundComponent,
@@ -67,6 +72,11 @@ import { environment } from 'src/environments/environment';
     EstadoFComponent,
   ],
   imports: [
+    MatNativeDateModule,
+    MatInputModule,
+
+    MatButtonToggleModule,
+    MatDatepickerModule,
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp({ 
@@ -81,6 +91,7 @@ import { environment } from 'src/environments/environment';
     ReactiveFormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
     provideFirestore(() => getFirestore()),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

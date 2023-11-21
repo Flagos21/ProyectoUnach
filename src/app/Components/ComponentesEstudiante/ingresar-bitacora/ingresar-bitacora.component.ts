@@ -1,14 +1,19 @@
 
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { PlacesService } from 'src/app/Services/places.service';
+
+
 
 
 @Component({
   selector: 'app-ingresar-bitacora',
   templateUrl: './ingresar-bitacora.component.html',
-  styleUrls: ['./ingresar-bitacora.component.css']
+  styleUrls: ['./ingresar-bitacora.component.css'],
+  
 })
+
+
 export class IngresarBitacoraComponent {
 
 

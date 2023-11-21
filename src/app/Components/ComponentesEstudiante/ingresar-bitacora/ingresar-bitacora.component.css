@@ -1,48 +1,57 @@
-.ola{
-    font-size: 20px;
-    font-weight: bold;
-    color: pink;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8ffe6; /* Azul claro */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+   }
+
+.container {
+  background-color: #ffffff; /* Blanco */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.mb-3{
-    font-size: 20px;
-    font-weight: bold;
-    color: pink;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}   
-/* Estilo para el contenedor principal del formulario */
-.form-container {
-    max-width: 400px; /* Define el ancho máximo del formulario */
-    margin: 0 auto; /* Centra el formulario en la página */
-    padding: 20px; /* Agrega un espacio interior alrededor del formulario */
-  }
-  
-  /* Estilo para los campos de entrada de texto */
-  .form-control {
-    width: 100%; /* Ocupa el 100% del ancho del contenedor */
-    margin-bottom: 10px; /* Agrega espacio entre los campos */
-  }
-  
-  /* Estilo para el campo de descripción (textarea) */
-  textarea.form-control {
-    height: 150px; /* Establece una altura para el campo de descripción */
-  }
-  
-  /* Estilo para el botón de envío */
-  .btn-info {
-    background-color: #17a2b8; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    padding: 10px 20px; /* Tamaño del botón */
-    border: none; /* Quita el borde del botón */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-  }
-  
-  /* Estilo para el botón de envío al pasar el cursor por encima */
-  .btn-info:hover {
-    background-color: #117a8b; /* Cambia el color de fondo al pasar por encima */
-  }
-  
+
+h1 {
+  color: #0066cc; /* Azul oscuro */
+  text-align: center;
+}
+
+.bitacora-form {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+label {
+  margin-bottom: 8px;
+  color: #0066cc; /* Azul oscuro */
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #0066cc; /* Azul oscuro */
+  border-radius: 4px;
+}
+
+button {
+  background-color: #0066cc; /* Azul oscuro */
+  color: #ffffff; /* Blanco */
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004080; /* Azul más oscuro al pasar el mouse */
+}
+.calendar{
+  background-color: #9500ff;
+  color: #ffffff;
+}

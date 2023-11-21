@@ -1,7 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { InscribirPComponent } from './inscribir-p.component';
-
+import {Component} from '@angular/core';
 describe('InscribirPComponent', () => {
   let component: InscribirPComponent;
   let fixture: ComponentFixture<InscribirPComponent>;
@@ -19,3 +18,4 @@ describe('InscribirPComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+

@@ -1,10 +1,15 @@
+
+
+
 /* Estilo para centrar verticalmente la sección */
 .section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Toma el 100% de la altura de la ventana (viewport height) */
+  height: 100vh;
+  
+   /* Toma el 100% de la altura de la ventana (viewport height) */
 }
 
 /* Estilos para el logotipo */
@@ -14,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   overflow: hidden;
   margin: 20px auto; /* Centra horizontalmente y agrega margen arriba y abajo */

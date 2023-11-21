@@ -1,15 +1,28 @@
-<p class="ola">ingresar-bitacora works! pato fleto (mas gay el fabian )</p>
-<form [formGroup]="bitacora" (ngSubmit)="onSubmit()">
-    <div class="mb-3">
-        <input type="number" class="form-control" formControlName="horas" placeholder="horas">
-    </div>
-    <div class="mb-3">
-        <input type="date" class="form-control" formControlName="fecha" placeholder="Fecha">
-    </div>
-    <div class="mb-3">
-      <textarea class="form-control" cols="30" rows="10" formControlName="descripcion" placeholder="Descripcion Actividades"></textarea>
-  </div>
-    
-  
-    <input type="submit" value="Enviar" class="btn btn-info">
+<div class="container">
+  <div class="prueba">
+  <h1>Bitácora</h1>
+  <form action="#" method="post" class="bitacora-form">
+      <label for="hora">Hora:</label>
+      <input type="text" id="hora" name="hora" required>
+
+      <label for="fecha">Fecha:</label>
+      <label >
+        <mat-form-field>
+          <mat-label >Choose a date</mat-label>
+          <input  matInput [matDatepicker]="picker">
+          <mat-hint  >MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix [for]="picker" ></mat-datepicker-toggle>
+          <mat-datepicker  #picker></mat-datepicker>
+        </mat-form-field>
+      </label>
+      
+
+
+      <label for="actividad">Actividad:</label>
+      <textarea id="actividad" name="actividad" rows="4" required></textarea>
+
+      <button type="submit">Registrar</button>
   </form>
+  
+</div>
+</div>
