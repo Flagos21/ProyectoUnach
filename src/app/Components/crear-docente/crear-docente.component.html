@@ -29,13 +29,23 @@
             <input type="text" id="rut1" class="rut-input-1" placeholder="">
         </div>
         
-        <div class="contrato-item">
+        <!-- <div class="contrato-item">
             <label for="tipo-contrato">Tipo de Contrato:</label>
-            <select id="tipo-contrato" class="contrato-input">
+            <select class="contrato-input" id="tipo-contrato" >
+                <option value="contrato">Contrato</option>
+                <option value="horario">Horario</option>
+            </select>
+        </div> -->
+        
+
+        <div class="contrato-item">
+            <label for="estado">Estado Practica</label>
+            <select class="contrato-input" id="estado" name="estado" formControlName="estado">
                 <option value="contrato">Contrato</option>
                 <option value="horario">Horario</option>
             </select>
         </div>
+
         
         <div class="email-item">
             <label for="email">Email:</label>
@@ -45,6 +55,7 @@
             <button class="boton">Estado docente</button>
             <button class="boton">Modificar docente</button>
             <button class="boton">Crear docente</button>
+            <input type="submit" value="Enviar" class="btn btn-info">
         </div>
     </div>
 
