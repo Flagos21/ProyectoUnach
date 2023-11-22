@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  style="background-color: #003366;">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="asignar-asignatura.component.css">
+    <meta name="viewport" content="width=device-width,user-scalable=none, initial-scale=1.0">
+    <title>Buscador con Imágenes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
-<body>
-    <div class="search-container">
-        <div class="left-image"></div>
-        <input type="text" class="search-input" placeholder="Buscar...">
-        <div class="right-images">
-            <div class="right-image " ></div>
-            <div class="right-image "></div>
+<body  style="background-color: #003366;">
+  
+    <nav class="navbar " style="background-color: #003366;">
+        <div class="container-fluid">
+          
+          <ul class="nav navbar-nav">
+            <li><a (click)="redirigirPortada()"> Inicio</a></li>
+            <li><a (click)="redirigirCrearDocente()"> Crear Docente</a></li>
+            <li><a (click)="redirigirCrearAsignatura()"> Crear Asignatura</a></li>
+            <li><a (click)="redirigirAsignarAsignatura()">Asignar asignatura</a></li>
+            <li><a (click)="redirigirListarAsignatura()">Listar Asignatura</a></li>
+          </ul>
+          <form class="navbar-form navbar-left" >
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Buscador" name="search">
+            </div>
+            <button type="submit" class="btn ">Buscar</button>
+          </form>
         </div>
-        <button class="close-button" (click)="redirigirPortada()">Cerrar</button>
-    </div>
+      </nav>
 
     <div class="containerflex" >
         <h1 >Asignar asignatura</h1>
