@@ -119,7 +119,9 @@ body {
 .nombre-item,
 .rut-item,
 .contrato-item,
-.email-item {
+.email-item,
+.profesion-item,
+.horascontratado-item {
   width: 80%;
   padding: 5px;
   margin-bottom: 5px;
@@ -129,7 +131,9 @@ body {
 .nombre-input,
 .rut-input-1,
 .contrato-input,
-.email-input {
+.email-input,
+.profesion-input,
+.horascontratado-input {
   width: 100%;
   padding: 5px;
   margin-bottom: 5px;
@@ -140,7 +144,9 @@ body {
   .nombre-item,
   .rut-item,
   .contrato-item,
-  .email-item {
+  .email-item,
+  .profesion-item,
+  .horascontratado-item {
     display: block;
   }
 }
