@@ -13,32 +13,33 @@
     <div class="info-container">
         <div class="mb-3">
             <label class="form-label">Id de Asignatura:</label>
-            <input type="text" class="form-control" formControlName="id_asignatura">
+            <input type="text"  class="form-control" formControlName="id_asignatura" >
         </div>
 
         <div class="mb-3">
             <label class="form-label">Asignatura:</label>
-            <input type="text" class="form-control" formControlName="nombre">
+            <input type="text"  class="form-control" formControlName="nombre" >
         </div>
         
         <div class="mb-3">
             <label class="form-label">Cantidad de creditos:</label>
-            <input type="text" class="form-control" formControlName="creditos">
+            <input type="number"  class="form-control" formControlName="creditos" >
         </div>
         
         <div class="mb-3">
             <label class="form-label">Horas lectivas:</label>
-            <input type="text" class="form-control" formControlName="horas_lectivas">
+            <input type="number"  class="form-control" formControlName="horas_lectivas" >
         </div>
 
-        <input type="submit" value="Enviar" class="btn btn-info">
+        <div class="botones-container">
+            <button class="boton">Modificar asignatura</button>
+            <button class="boton">Crear asignatura</button>
+            <input type="submit" value="Enviar" class="btn btn-info">
+          </div>
         </div> 
+        
 </form>
 
-    <div class="botones-container">
-      <button class="boton">Modificar asignatura</button>
-      <button class="boton">Crear asignatura</button>
-      <input type="submit" value="Enviar" class="btn btn-info">
-    </div>
+    
 </body>
 </html>

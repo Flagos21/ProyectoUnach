@@ -1,7 +1,10 @@
 body {
+  height: 100%;
     font-family: sans-serif;
     margin: 1px;
     padding: 1px;
+    background-color:#0056b3 ;
+    
   }
   
   .search-container {
