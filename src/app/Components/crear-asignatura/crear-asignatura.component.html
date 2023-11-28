@@ -6,14 +6,15 @@
     <title>Buscador con Imágenes</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
-<body  style="background-color: #003366;">
+<body  style="background-color: #003366; height: 1000px" >
+        
   
     <app-barnav></app-barnav>
 <div>
     <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
 
         <div class="info-container">
-            
+            <h1 >Crear asignatura</h1>
     
             <div class="codigo-item">
                 <label for="codigo">Codigo/seción:</label>
@@ -41,8 +42,7 @@
            
             </div> 
     </form> 
-</div>
-
+</div> 
 
   
 </body>
