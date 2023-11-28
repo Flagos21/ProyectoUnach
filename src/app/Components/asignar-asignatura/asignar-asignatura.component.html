@@ -12,18 +12,20 @@
 
     <div class="containerflex" >
         <h1 >Asignar asignatura</h1>
+
+        <div class="rut-item">
+            <label  for="rut">Rut:</label>
+            <input type="text" id="rut1" class="rut-input-1" placeholder="">
+        </div>
+
         <div class="nombre-item">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" class="nombre-input" placeholder="">
         </div>
-        <div class="rut-item">
-            <label class="label" for="rut">Rut:</label>
-            <input type="text" id="rut1" class="rut-input-1" placeholder="">
-        </div>
         
-        <div class="año">
-            <label for="tipo-año">Año:</label>
-            <select id="tipo-año" class="año-input">
+        <div class="año-item">
+            <label  for="tipo-año">Año:</label>
+            <select type="text" id="tipo-año" class="año-input">
                 <option value="primer-año">2023</option>
                 <option value="segundo-año">2022</option>
                 <option value="segundo-año">2021</option>
@@ -33,7 +35,7 @@
             </select>
         </div>
 
-        <div class="semestre">
+        <div class="semestre-item">
             <label for="tipo-semestre">Semestre:</label>
             <select id="tipo-semestre" class="semestre-input">
                 <option value="primer-semestre">Primer semestre</option>
@@ -47,14 +49,14 @@
         </div>
 
         <div class="id-asignatura-item">
-            <label for="id-asignatura"> Id de asignatura:</label>
-            <input type="text" id="id-asignatura" class="id-asignatura-input" placeholder="">
+            <label for="id-asignatura"> Codigo/sección:</label>
+            <input type="text" id="id-asignatura" class="id-asignatura-input" placeholder="CGE600/FI41">
         </div>
         
         <div class="cantidad-horas-item">
             <label for="cantidad-horas">Cantidad de horas:</label>
-            <input type="text" id="cantidad-horas" class="cantidad-horas-input" placeholder="">
-        </div>
+            <input type="text" id="cantidad-horas" class="cantidad-horas-input" placeholder=""> 
+        </div>  <!-- samuelito esto se tiene que rellenar automaticamente peticion de la profe :3  -->
 
         <div class="botones-container">
             <button class="boton">Confirmar</button>
