@@ -13,7 +13,6 @@ import { ProgresoInicialComponent } from './Components/ComponentesProfesor/progr
 import { combineLatest } from 'rxjs';
 import { ProgresoIntermedioComponent } from './Components/ComponentesProfesor/progreso-intermedio/progreso-intermedio.component';
 import { ProgresoFinalComponent } from './Components/ComponentesProfesor/progreso-final/progreso-final.component';
-import { VerBitacoraComponent } from './Components/ComponentesProfesor/ver-bitacora/ver-bitacora.component';
 import { GestionarPracticasComponent } from './Components/ComponentesProfesor/gestionar-practicas/gestionar-practicas.component';
 import { HomeComponent } from './Components/home/home.component';
 import { HomeEstudianteComponent } from './Components/ComponentesEstudiante/home-estudiante/home-estudiante.component';
@@ -47,7 +46,6 @@ const routes: Routes = [
   {path: 'progreso-inicial', component: ProgresoInicialComponent},
   {path: 'progreso-intermedio', component: ProgresoIntermedioComponent},
   {path: 'progreso-final', component: ProgresoFinalComponent},
-  {path: 'ver-bitacora', component: VerBitacoraComponent},
 
 //Rutas de navegacion 'ComponentesEstudiantes'  
   {path: 'home-estudiante', component:HomeEstudianteComponent},
@@ -59,8 +57,7 @@ const routes: Routes = [
   {path: 'estado-in', component: EstadoInComponent},
   {path: 'estado-f', component: EstadoFComponent},
   {path: 'mi-practica', component: MiPracticaComponent},
-  {path: 'ingresar-bitacora', component: IngresarBitacoraComponent},
-  {path: 'ver-bitacora', component:VerBitacoraComponent},  
+  {path: 'ingresar-bitacora', component: IngresarBitacoraComponent}, 
 
 // Rutas 404
   {path: '404', component: PagenotfoundComponent},

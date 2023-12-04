@@ -14,7 +14,6 @@ import { GestionarPracticasComponent } from './Components/ComponentesProfesor/ge
 import { ProgresoInicialComponent } from './Components/ComponentesProfesor/progreso-inicial/progreso-inicial.component';
 import { ProgresoIntermedioComponent } from './Components/ComponentesProfesor/progreso-intermedio/progreso-intermedio.component';
 import { ProgresoFinalComponent } from './Components/ComponentesProfesor/progreso-final/progreso-final.component';
-import { VerBitacoraComponent } from './Components/ComponentesProfesor/ver-bitacora/ver-bitacora.component';
 import { SolicitanteInicialComponent } from './Components/ComponentesProfesor/solicitante-inicial/solicitante-inicial.component';
 import { SolicitanteIntermedioComponent } from './Components/ComponentesProfesor/solicitante-intermedio/solicitante-intermedio.component';
 import { SolicitanteFinalComponent } from './Components/ComponentesProfesor/solicitante-final/solicitante-final.component';
@@ -51,7 +50,6 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
     ProgresoInicialComponent,
     ProgresoIntermedioComponent,
     ProgresoFinalComponent,
-    VerBitacoraComponent,
     SolicitanteInicialComponent,
     SolicitanteIntermedioComponent,
     SolicitanteFinalComponent,

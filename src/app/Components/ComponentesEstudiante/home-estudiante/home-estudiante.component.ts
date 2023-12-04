@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-estudiante',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-estudiante.component.css']
 })
 export class HomeEstudianteComponent {
-
+  constructor(private router: Router){
+  }
+  navegarGP(){
+    this.router.navigate(['inscribir-p'])
+  }
+  navegarNP(){
+    this.router.navigate(['mi-practica'])
+  }
+  navegarNI(){
+    this.router.navigate(['estado-p'])
+  }
 }
