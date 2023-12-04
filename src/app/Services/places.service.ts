@@ -13,7 +13,7 @@ export class PlacesService {
   constructor(private firestore: Firestore) { }
 
   addPlace(place: Place) {
-    const placeRef = collection(this.firestore, 'places');
+    const placeRef = collection(this.firestore, 'practicas');
     return addDoc(placeRef, place);
   }
   addBitacora(bitacora: Bitacora) {

@@ -40,6 +40,11 @@ import {MatDatepickerModule } from '@angular/material/datepicker';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
+
+import { RegisterComponent } from './Components/register/register.component';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+
+
 @NgModule({
   declarations: [
     
@@ -70,6 +75,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     EstadoIComponent,
     EstadoInComponent,
     EstadoFComponent,
+    RegisterComponent,
   ],
   imports: [
     MatNativeDateModule,
@@ -79,19 +85,14 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatDatepickerModule,
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp({ 
-      apiKey: "AIzaSyDJLl63eIqm3UZbAgnQwDQa6m_lt6RhfMs",
-      authDomain: "proyecto-unach.firebaseapp.com",
-      projectId: "proyecto-unach",
-      storageBucket: "proyecto-unach.appspot.com",
-      messagingSenderId: "341018038115",
-      appId: "1:341018038115:web:9879e451758c5224ff4d56",
-      measurementId: "G-VQ9B7YG3Y9"
-    }),
     ReactiveFormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
     provideFirestore(() => getFirestore()),
+
     BrowserAnimationsModule,
+
+    provideAuth(() => getAuth()),
+
   ],
   providers: [],
   bootstrap: [AppComponent]
