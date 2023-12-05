@@ -6,44 +6,46 @@
     <title>Buscador con Imágenes</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
-<body  style="background-color: #003366; height: 1000px" >
+<body  style="background-color: #003366;">
+  
+<app-barnav></app-barnav>
+
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="info-container">
         
-  
-    <app-barnav></app-barnav>
-<div>
-    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+      <h1 >Crear asignatura</h1>
+        <div class="mb-3">
+            <label class="form-label">Seccion/codigo:</label>
+            <input type="text"  class="form-control" formControlName="id_asignatura" >
+        </div>
 
-        <div class="info-container">
-            <h1 >Crear asignatura</h1>
-    
-            <div class="codigo-item">
-                <label for="codigo">Codigo/seción:</label>
-                <input type="text" id="codigo" class="form-control" placeholder="">
-            </div>
-    
-            <div class="asignatura-item">
-                <label class="form-label">Asignatura:</label>
-                <input type="text" id="asignatura" class="form-control" placeholder="">
-            </div>
-            
-            <div class="creditos-item">
-                <label class="form-label">Cantidad de creditos:</label>
-                <input type="text" id="creditos" class="form-control" placeholder="">
-            </div>
-            
-            <div class="horas-item">
-                <label class="form-label">Horas lectivas:</label>
-                <input type="text" id="horas-input" class="form-control" placeholder="">
-            </div>
-            <div class="botones-container">
-                <button class="boton">Modificar asignatura</button>
-                <button class="boton" type="submit">Crear asignatura</button>
-              </div>
-           
-            </div> 
-    </form> 
-</div> 
+        <div class="mb-3">
+            <label class="form-label">Asignatura:</label>
+            <input type="text"  class="form-control" formControlName="nombre" >
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">Cantidad de creditos:</label>
+            <input type="number"  class="form-control" formControlName="creditos" >
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">Horas lectivas:</label>
+            <input type="number"  class="form-control" formControlName="horas_lectivas" >
+        </div>
+        
+        <div class="mb-3">
+          <label class="form-label">Cantidad de alumnos:</label>
+          <input type="number"  class="form-control" formControlName="horas_lectivas" >
+      </div>
 
-  
+        <div class="botones-container">
+            <button class="boton">Modificar asignatura</button>
+            <button class="boton">Crear asignatura</button>
+            <input type="submit" value="Enviar" class="btn btn-info">
+          </div>
+        </div> 
+        
+</form>
 </body>
 </html>

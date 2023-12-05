@@ -1,8 +1,10 @@
 body {
-  font-family: sans-serif;
-  margin: 1px;
-  padding: 1px;
-  height: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    margin: 1px;
+    padding: 1px;
+    background-color:#0056b3 ;
+    
   }
 
 /* Estilos para los campos de información */
@@ -17,7 +19,6 @@ body {
   }
   
   
-/* Estilos para el campo Nombre */
 /* Estilos para los campos de información */
 .nombre-item,
 .rut-item,
@@ -26,6 +27,18 @@ body {
 .profesion-item,
 .horascontratado-item {
   width: 80%;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.nombre-input,
+.rut-input-1,
+.contrato-input,
+.email-input,
+.profesion-input,
+.horascontratado-input {
+  width: 100%;
   padding: 5px;
   margin-bottom: 5px;
   margin-left: 5px;

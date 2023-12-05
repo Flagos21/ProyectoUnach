@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: 'crear-docente', component: CrearDocenteComponent},
   {path: 'crear-asignatura', component: CrearAsignaturaComponent},
   {path: 'asignar-asignatura', component: AsignarAsignaturaComponent},
-  { path: 'listar-asignatura', component: ListarAsignaturaComponent}
+  {path: 'listar-asignatura', component: ListarAsignaturaComponent}
 
 ];
 
