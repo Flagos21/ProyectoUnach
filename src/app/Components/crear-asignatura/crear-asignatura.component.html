@@ -9,10 +9,13 @@
 <body  style="background-color: #003366;">
   
 <app-barnav></app-barnav>
+
 <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
     <div class="info-container">
+        
+      <h1 >Crear asignatura</h1>
         <div class="mb-3">
-            <label class="form-label">Id de Asignatura:</label>
+            <label class="form-label">Seccion/codigo:</label>
             <input type="text"  class="form-control" formControlName="id_asignatura" >
         </div>
 
@@ -30,6 +33,11 @@
             <label class="form-label">Horas lectivas:</label>
             <input type="number"  class="form-control" formControlName="horas_lectivas" >
         </div>
+        
+        <div class="mb-3">
+          <label class="form-label">Cantidad de alumnos:</label>
+          <input type="number"  class="form-control" formControlName="horas_lectivas" >
+      </div>
 
         <div class="botones-container">
             <button class="boton">Modificar asignatura</button>
@@ -42,7 +50,5 @@
 
         </div>       
 </form>
-
-    
 </body>
 </html>
