@@ -27,9 +27,14 @@ export class ListarDocentesComponent implements OnInit{
     this.cargaAcademica.getDocente().subscribe(docente =>{
       this.docente = docente;
       //console.log(asignatura);
-
     })
-
   }
+
+  mostrarSidebar: boolean = true;
+
+  toggleSidebar() {
+    this.mostrarSidebar = !this.mostrarSidebar;
+  }
+
 
 }

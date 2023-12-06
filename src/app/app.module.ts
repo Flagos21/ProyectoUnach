@@ -16,6 +16,7 @@ import { BarnavComponent } from './Components/barnav/barnav.component';
 import { ListarAsignaturaComponent } from './Components/listar-asignatura/listar-asignatura.component';
 import { BarraLateralComponent } from './Components/barra-lateral/barra-lateral.component';
 import { ListarDocentesComponent } from './listar-docentes/listar-docentes.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ListarDocentesComponent } from './listar-docentes/listar-docentes.compo
     BarnavComponent,
     ListarAsignaturaComponent,
     BarraLateralComponent,
-    ListarDocentesComponent
+    ListarDocentesComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
