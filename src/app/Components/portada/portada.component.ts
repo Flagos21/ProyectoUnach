@@ -21,7 +21,7 @@ export class PortadaComponent {
   }
 
   redirigirListarAsignatura() {
-    this.router.navigate(['/asignar-asignatura']); // Reemplaza 'otro-componente' con la ruta de tu componente de destino
+    this.router.navigate(['/listar-asignatura']); // Reemplaza 'otro-componente' con la ruta de tu componente de destino
   }
 
 }
