@@ -5,6 +5,7 @@ import { CrearDocenteComponent } from './Components/crear-docente/crear-docente.
 import { CrearAsignaturaComponent } from './Components/crear-asignatura/crear-asignatura.component';
 import { AsignarAsignaturaComponent } from './Components/asignar-asignatura/asignar-asignatura.component';
 import { ListarAsignaturaComponent } from './Components/listar-asignatura/listar-asignatura.component';
+import { BarraLateralComponent } from './Components/barra-lateral/barra-lateral.component';
 
 const routes: Routes = [
   {path: '',redirectTo: 'portada', pathMatch: 'full'}, 
@@ -12,7 +13,9 @@ const routes: Routes = [
   {path: 'crear-docente', component: CrearDocenteComponent},
   {path: 'crear-asignatura', component: CrearAsignaturaComponent},
   {path: 'asignar-asignatura', component: AsignarAsignaturaComponent},
-  {path: 'listar-asignatura', component: ListarAsignaturaComponent}
+  {path: 'listar-asignatura', component: ListarAsignaturaComponent},
+  {path: 'barra-lateral', component: BarraLateralComponent}
+
 
 ];
 

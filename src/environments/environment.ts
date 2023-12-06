@@ -1,11 +1,13 @@
 export const environment = {
-  apiKey: "AIzaSyAoQFP2SAM9Yy1JA5--kTe3fEFQjV_OH5I",
-  authDomain: "cargaacademicaa.firebaseapp.com",
-  projectId: "cargaacademicaa",
-  storageBucket: "cargaacademicaa.appspot.com",
-  messagingSenderId: "449322614080",
-  appId: "1:449322614080:web:18af236dc748f892a4cea5",
-  measurementId: "G-JWEBZZM407"
+   firebase: {
+    apiKey: "AIzaSyBuIaTekNyJbpBDINZHEtY1WLGqvX18pss",
+    authDomain: "clinicadental-808bd.firebaseapp.com",
+    projectId: "clinicadental-808bd",
+    storageBucket: "clinicadental-808bd.appspot.com",
+    messagingSenderId: "981730374950",
+    appId: "1:981730374950:web:2f7d3b952c4e00169a3de7",
+    measurementId: "G-9895JQMZMJ"
+  }
   };
 
   
