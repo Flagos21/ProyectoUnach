@@ -14,6 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { PruebasComponent } from './Components/pruebas/pruebas.component';
 import { BarnavComponent } from './Components/barnav/barnav.component';
 import { ListarAsignaturaComponent } from './Components/listar-asignatura/listar-asignatura.component';
+import { ListarDocentesComponent } from './listar-docentes/listar-docentes.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ListarAsignaturaComponent } from './Components/listar-asignatura/listar
     AsignarAsignaturaComponent,
     PruebasComponent,
     BarnavComponent,
-    ListarAsignaturaComponent
+    ListarAsignaturaComponent,
+    ListarDocentesComponent
   ],
   imports: [
     BrowserModule,
