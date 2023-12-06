@@ -1,6 +1,8 @@
-export default interface Asignatura {
-    id_asignatura?: string;
+export default interface Docente {
+    run?: string;
     nombre: string;
-    creditos: number;
-    horas_lectivas: number;
+    profesion: string;
+    tipocontrato: number;
+    horascontrato: number;
+    email: string;
 }

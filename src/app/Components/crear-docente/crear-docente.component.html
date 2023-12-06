@@ -9,28 +9,28 @@
 <body  style="background-color: #003366; ">
   
     <app-barnav></app-barnav>
-        
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
     <div class="containerflex" >
         <h1 >Crear docente</h1>
 
         <div class="rut-item">
             <label for="rut1" >Rut:</label>
-            <input type="text" id="rut1" class="form-control" placeholder="" required>
+            <input type="text" id="rut1" class="form-control" placeholder="" required formControlName="run">
         </div>
 
         <div class="nombre-item">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" class="form-control" placeholder="">
+            <input type="text" id="nombre" class="form-control" placeholder="" formControlName="nombre">
         </div>
         
         <div class="profesion-item">
             <label for="profesion">Profesion:</label>
-            <input type="text" id="profesion" class="form-control" placeholder="">
+            <input type="text" id="profesion" class="form-control" placeholder="" formControlName="profesion">
         </div>
         
         <div class="contrato-item">
             <label for="tipo-contrato">Tipo de Contrato:</label>
-            <select id="tipo-contrato" class="form-control">
+            <select id="tipo-contrato" class="form-control" formControlName="tipocontrato">
                 <option value="contrato">Contrato</option>
                 <option value="horario">Horario</option>
             </select>
@@ -38,20 +38,21 @@
         
         <div class="horascontratado-item">
             <label for="horascontratado">Horas contratado:</label>
-            <input type="text" id="horascontratado" class="form-control" placeholder="">
+            <input type="text" id="horascontratado" class="form-control" placeholder="" formControlName="horascontrato">
         </div>
         
         <div class="email-item">
             <label for="email">Email:</label>
-            <input type="text" id="email" class="form-control" placeholder="">
+            <input type="text" id="email" class="form-control" placeholder="" formControlName="email">
         </div>
 
 
         <div class="botones-container">
             <button class="boton">Estado docente</button>
             <button class="boton">Modificar docente</button>
-            <button class="boton">Crear docente</button>
+            <button class="boton" type="submit">Crear docente</button>
         </div>
     </div>
+    </form>
 </body>
 </html>
