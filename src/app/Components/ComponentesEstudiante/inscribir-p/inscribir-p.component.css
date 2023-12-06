@@ -1,0 +1,16 @@
+/* Estilos para el formulario */
+form {
+    width: 50%; /* Ancho del formulario */
+    margin: auto; /* Centrar horizontalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh; /* Ajusta el espacio desde la parte superior */
+  }
+  
+  /* Estilos para el botón */
+  .btn {
+    margin-top: 20px; /* Espacio entre el formulario y el botón */
+  }
+  
