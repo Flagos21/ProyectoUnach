@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: 'crear-asignatura', component: CrearAsignaturaComponent},
   {path: 'asignar-asignatura', component: AsignarAsignaturaComponent},
   {path: 'listar-asignatura', component: ListarAsignaturaComponent},
-  {path: 'barra-lateral', component: BarraLateralComponent}.
+  {path: 'barra-lateral', component: BarraLateralComponent},
   {path: 'listar-docentes', component: ListarDocentesComponent}
 ];
 
