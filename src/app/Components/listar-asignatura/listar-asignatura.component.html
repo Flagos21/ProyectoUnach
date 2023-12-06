@@ -17,28 +17,16 @@
           <tr>
             <th>Código</th>
             <th>Asignatura</th>
-            <th>Profesor</th>
+            <th>Créditos</th>
             <th>Cantidad de alumnos</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>MAT-101</td>
-            <td>Calculo</td>
-            <td>Felipe Araya</td>
-            <td>40</td>
-          </tr>
-          <tr>
-            <td>FIS-102</td>
-            <td>Ingenieria web</td>
-            <td>Pablo Calderon</td>
-            <td>40</td>
-          </tr>
-          <tr>
-            <td>QUI-103</td>
-            <td>Química</td>
-            <td>Benito Calo</td>
-            <td>40</td>
+          <tr *ngFor="let asignatura of asignatura">
+            <td>{{ asignatura.id_asignatura}}</td>
+            <td>{{ asignatura.nombre }}</td>
+            <td>{{ asignatura.creditos }}</td>
+            <td>{{ asignatura.horas_lectivas }}</td>
           </tr>
         </tbody>
       </table>
