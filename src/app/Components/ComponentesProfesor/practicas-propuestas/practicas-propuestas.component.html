@@ -14,7 +14,7 @@
         </tbody>
       </table>
   
-      <table *ngIf="!mostrar && selectedProduct">
+      <table *ngIf="!mostrar && selectedProduct"  >
         <tbody>
           <tr>
             <td>{{ selectedProduct.nombre }}</td>
@@ -23,11 +23,14 @@
             <td>{{ selectedProduct.descripcion }}</td>
             <td>
               <button (click)="aprobarPractica(selectedProduct)">Aprobar</button>
-              <button (click)="rechazarPractica(selectedProduct)">Rechazar</button>
+              <button (click)="rechazarPractica(selectedProduct)" class="boton-rojo">Rechazar</button>
+
             </td>
           </tr>
         </tbody>
       </table>
     </div>
   </section>
+  <section>
+
   
