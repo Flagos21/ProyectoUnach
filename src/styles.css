@@ -16,6 +16,9 @@
 /* You can add global styles to this file, and also import other style files */
 body{
     background-color: #003366;
+    border-top: 60px solid white; /* Esto creará una línea blanca de 1 píxel de grosor en la parte superior del cuerpo */
+   
+    
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
