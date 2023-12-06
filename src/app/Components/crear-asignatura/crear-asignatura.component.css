@@ -21,21 +21,25 @@ body {
 
 /* Estilos para los campos de información */
 .asignatura-item,
-.id-asignatura-item,
-.cantidad-creditos-item,
-.horas-lectivas-item {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+.idasignatura-item,
+.cantidadcreditos-item,
+.horaslectivas-item,
+.cantidadalumnos-item {
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
 }
 
-.asignatura-item label,
-.id-asignatura-item label,
-.cantidad-creditos-item label,
-.horas-lectivas-item label {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
+.asignatura-input,
+.id-asignatura-input,
+.cantidad-creditos-input,
+.horas-lectivas-input{ 
+   width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;}
+
 
 @media (max-width: 768px) {
   .asignatura-item,
