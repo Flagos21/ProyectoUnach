@@ -27,9 +27,9 @@ export class CargaAcademicaService {
     return addDoc(docenteRef, docente);
   }
 
-  getDocente(): Observable<Asignatura[]>{
+  getDocente(): Observable<Docente[]>{
     const docenteRef = collection(this.firestore, 'cargaacademica_DOCENTES');
-    return collectionData(docenteRef, {idField: 'id'}) as Observable<Asignatura[]>;
+    return collectionData(docenteRef, {idField: 'id'}) as Observable<Docente[]>;
   }
 
 }

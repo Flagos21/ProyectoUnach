@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    margin: 1px;
+    padding: 1px;
+    background-color: #0056b3;
+    overflow-x: hidden;
+  }
+
+  .container {
+    margin: 50px auto;
+    width: 80%;
+    height: auto;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Unir los bordes de las celdas */
+    margin: 0 auto; /* Centrar la tabla en la pantalla */
+  }
+  
+  th {
+    background-color: #ddd; /* Color de fondo del encabezado */
+    font-weight: bold; /* Texto en negrita */
+    padding: 0,5%; /* Espacio interior de las celdas del encabezado */
+    border: 1px solid #ddd; /* Borde de las celdas */
+  }
+  
+  td {
+    padding: 1%; /* Espacio interior de las celdas del cuerpo */
+    border: 1% solid #ddd; /* Borde de las celdas */
+  }
+  
+  

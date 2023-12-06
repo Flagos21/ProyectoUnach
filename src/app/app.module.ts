@@ -15,6 +15,7 @@ import { PruebasComponent } from './Components/pruebas/pruebas.component';
 import { BarnavComponent } from './Components/barnav/barnav.component';
 import { ListarAsignaturaComponent } from './Components/listar-asignatura/listar-asignatura.component';
 import { BarraLateralComponent } from './Components/barra-lateral/barra-lateral.component';
+import { ListarDocentesComponent } from './listar-docentes/listar-docentes.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BarraLateralComponent } from './Components/barra-lateral/barra-lateral.
     PruebasComponent,
     BarnavComponent,
     ListarAsignaturaComponent,
-    BarraLateralComponent
+    BarraLateralComponent,
+    ListarDocentesComponent
   ],
   imports: [
     BrowserModule,

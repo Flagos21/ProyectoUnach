@@ -1,0 +1,40 @@
+<p>listar-docentes works!</p>
+<!DOCTYPE html>
+<html lang="en"  style="background-color: #003366;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=none, initial-scale=1.0">
+    <title>Buscador con Imágenes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body  style="background-color: #003366;">
+  
+<app-barnav></app-barnav>
+
+    <div class="container">
+        
+      <table>
+        <thead>
+          <tr>
+            <th>Run</th>
+            <th>Nombre</th>
+            <th>Profesión</th>
+            <th>Tipo de Contrato</th>
+            <th>Horas Contratadas</th>
+            <th>email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let docente of docente">
+            <td>{{ docente.run}}</td>
+            <td>{{ docente.nombre }}</td>
+            <td>{{ docente.profesion}}</td>
+            <td>{{ docente.tipocontrato }}</td>
+            <td>{{ docente.horascontrato }}</td>
+            <td>{{ docente.email }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</body>
+</html>

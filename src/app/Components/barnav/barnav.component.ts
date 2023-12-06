@@ -32,4 +32,7 @@ export class BarnavComponent {
   redirigirCrearDocente() {
     this.router.navigate(['/crear-docente']); // Reemplaza 'otro-componente' con la ruta de tu componente de destino
   }
+  redirigirListarDocentes() {
+    this.router.navigate(['/listar-docentes']); // Reemplaza 'otro-componente' con la ruta de tu componente de destino
+  }
 }
