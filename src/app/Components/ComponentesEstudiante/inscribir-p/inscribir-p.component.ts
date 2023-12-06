@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup} from '@angular/forms';
 import { PlacesService } from 'src/app/Services/places.service';
+import Place from 'src/app/interfaces/place.interface';
 
 @Component({
   selector: 'app-inscribir-p',
@@ -28,9 +29,18 @@ export class InscribirPComponent implements OnInit{
   }
 
   async onSubmit() {
-    console.log(this.formulario.value)
-    const response = await this.placesService.addPlace(this.formulario.value);
-    console.log(response);
+    if (this.formulario.valid){
+      const newPractica: Place = this.formulario.value;
+      this.placesService.addPlace(newPractica)
+      .then(() => {
+        console.log('producto agregado exitosamente');
+        this.placesService.loadPracticasData();
+        this.formulario.reset
+      })
+      .catch(error => {
+        console.log('Error al agregar practica', error);
+      });
+    }
   }
 }
 
